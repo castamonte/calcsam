@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Привет, мир, привет!</string>
+    <string name="app_name">Калькулятор самогонщика</string>
+    <color name="myColor">#088</color>
+    <string name="greeting">Поздороваться</string>
+    <string name="dilution">Разведение</string>
+    <string name="mixing">Смешение</string>
+    <string name="steam">Пар</string>
+    <string name="distillation">Перегонка</string>
+    <string name="t_adjust">Температурный пересчёт</string>
+    <string name="density">Плотность</string>
+    <string name="mixing_caption">Смешение растворов</string>
+    <string name="volume">V</string>
+    <string name="proc">% спирта</string>
+    <string name="ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum nibh in ligula suscipit eu venenatis enim congue. Aliquam at pulvinar quam. Donec et felis ligula, sed cursus eros. Donec ac quam in neque ullamcorper ullamcorper ac sit amet elit. Phasellus sollicitudin tortor nec nunc euismod faucibus. Donec nec nulla odio. Mauris id pellentesque tellus. Aenean luctus velit massa, vel lacinia odio. Aliquam imperdiet sodales turpis a egestas. Mauris tristique ligula id nisl tempus dapibus.</string>
+    <string name="spirit_pro">% спирта в растворе</string>
+    <string name="boil">температура кипения</string>
+    <string name="t_adjust_long">Температурный пересчёт объёмной концентрации спирта, измеряемой по плотности</string>
+    <string name="t_ar0">Показания ареометра (об. %)</string>
+    <string name="t_t0">Температура измерения (0..50 °С)</string>
+    <string name="t_t1">Конечная температура (0..50 °С)</string>
+    <string name="t_ar1">Эквивалентная спиритуозность (об. %)</string>
+    <string name="t_ro0">Текущая плотность (кг/л)</string>
+    <string name="t_ro1">Конечная плотность (кг/л)</string>
+</resources>

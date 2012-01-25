@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="vertical">
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView1" android:textSize="24px" android:layout_gravity="center_horizontal" android:text="@string/steam"></TextView>
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:baselineAligned="false">
+        <TextView android:layout_height="wrap_content" android:id="@+id/textView4" android:text="@string/spirit_pro" android:layout_width="wrap_content"></TextView>
+        <EditText android:layout_height="wrap_content" android:id="@+id/editText1" android:layout_width="wrap_content" android:text="96" android:numeric="decimal"></EditText>
+        <Button android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/button1" android:text="&gt;" android:layout_width="wrap_content"></Button>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linearLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView2" android:text="@string/boil"></TextView>
+        <EditText android:layout_height="wrap_content" android:id="@+id/editText2" android:layout_width="wrap_content" android:text="78.2" android:numeric="integer"></EditText>
+        <Button android:layout_height="wrap_content" android:id="@+id/button2" android:text="&gt;" android:layout_width="wrap_content"></Button>
+    </LinearLayout>
+    <TextView android:text="TextView" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+</LinearLayout>

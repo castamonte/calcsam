@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" 
+  android:layout_height="fill_parent" android:orientation="vertical" android:padding="32dip" android:background="@color/myColor">
+    <TextView android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_height="wrap_content" android:text="@string/app_name" android:textStyle="bold" android:textSize="18dip" android:layout_gravity="center" android:layout_marginBottom="30dip"></TextView>
+    <Button android:id="@+id/t_button" android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="@string/t_adjust"></Button>
+  
+</LinearLayout>
