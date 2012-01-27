@@ -3,7 +3,17 @@
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="fill_parent"
   android:layout_height="fill_parent" android:orientation="vertical">
-    <TextView android:layout_width="wrap_content" android:id="@+id/mixing_caption" android:layout_height="wrap_content" android:text="@string/mixing_caption" android:textColor="@color/myColor"></TextView>
+
+    <TextView
+        android:id="@+id/mixing_caption"
+        style="@style/PageHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mixing_caption"
+        android:textAppearance="@style/PageHeader"
+        android:textColor="@color/myColor" >
+
+</TextView>
     <TableLayout android:layout_width="fill_parent" android:id="@+id/tableLayout1" android:layout_height="wrap_content">
         <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="true">
             <TextView android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_height="wrap_content" android:text="@string/volume" android:layout_weight="2"></TextView>
