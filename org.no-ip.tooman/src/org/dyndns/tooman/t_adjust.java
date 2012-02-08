@@ -1,6 +1,8 @@
 package org.dyndns.tooman;
 
+import org.dyndns.tooman.ExternalDbOpenHelper;
 import android.app.Activity;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -13,6 +15,13 @@ public class t_adjust extends Activity {
 	private EditText ar0, t0, t1;
 	private TextView ar1, ro0, ro1;
 	private Integer i_ar0, i_t0, i_t1;
+	private static final String DB_NAME = "alcotable.db";
+    //Хорошей практикой является задание имен полей БД константами
+	private static final String TABLE_NAME = "tempert";
+	private static final String KEY_ID = "_id";
+	private static final String CONC_NAME = "conc";
+	private SQLiteDatabase database;
+	
 	TextView.OnEditorActionListener etListener = new TextView.OnEditorActionListener() {
 		@Override
 		public boolean onEditorAction(TextView exampleView, int actionId,
@@ -42,6 +51,11 @@ public class t_adjust extends Activity {
 
 		t1 = (EditText) findViewById(R.id.editText3);
 		t1.setOnEditorActionListener(etListener);
+		
+		//Наш ключевой хелпер
+        ExternalDbOpenHelper dbOpenHelper = new ExternalDbOpenHelper(this, DB_NAME);
+        database = dbOpenHelper.openDataBase();
+        //Все, база открыта!
 	}
 
 	private void recalc() {
@@ -82,4 +96,22 @@ public class t_adjust extends Activity {
 		ro1.setText(String.valueOf(i_t1 * 0.01));
 	}
 
+/*	пример из http://idev.by/android/145/
+ * //Извлечение элментов из базы данных
+	private void fillFreinds() {
+		friends = new ArrayList<String>();
+		Cursor friendCursor = database.query(TABLE_NAME,
+	                                             new String[] {FRIEND_ID, FRIEND_NAME},
+						     null, null,null,null,
+	                                             FRIEND_NAME);
+			friendCursor.moveToFirst();
+			if(!friendCursor.isAfterLast()) {
+				do {
+					String name = friendCursor.getString(1);
+					friends.add(name);
+				} while (friendCursor.moveToNext());
+			}
+			friendCursor.close();
+		}
+	}*/
 }
