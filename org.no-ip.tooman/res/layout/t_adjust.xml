@@ -128,7 +128,7 @@
                 android:gravity="right"
                 android:text="96"
                 android:textColor="@color/myColor"
-                android:textSize="18dp"
+                android:textSize="24dp"
                 android:textStyle="bold" >
             </TextView>
         </TableRow>
@@ -156,9 +156,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0"
                 android:gravity="right"
-                android:text="0,81"
+                android:text="0,807"
                 android:textColor="@color/myColor"
-                android:textSize="18dp"
+                android:textSize="24dp"
                 android:textStyle="bold" >
             </TextView>
         </TableRow>
@@ -186,9 +186,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_weight="0"
                 android:gravity="right"
-                android:text="0,81"
+                android:text="0,807"
                 android:textColor="@color/myColor"
-                android:textSize="18dp"
+                android:textSize="24dp"
                 android:textStyle="bold" >
             </TextView>
         </TableRow>
