@@ -23,4 +23,12 @@
     <string name="t_ar1">Эквивалентная спиритуозность (об. %)</string>
     <string name="t_ro0">Текущая плотность (кг/л)</string>
     <string name="t_ro1">Конечная плотность (кг/л)</string>
+    <string-array name="works">
+        <item >Температурный пересчёт концентрации</item>
+        <item >Смешение растворов</item>
+        <item >Перегонка</item>
+        <item >Температура кипения</item>
+        <item >Плотность</item>
+        <item >Опохмел</item>
+    </string-array>
 </resources>

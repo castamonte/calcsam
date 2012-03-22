@@ -3,32 +3,52 @@ package org.dyndns.tooman;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
 
-public class hello extends Activity implements OnClickListener {
-	/** Called when the activity is first created. */
+public class hello extends Activity {
+
+	final String LOG_TAG = "myLogs";
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.hello);
-		View t_Button = findViewById(R.id.t_button);
-		t_Button.setOnClickListener((OnClickListener) this);
+		ListView myListView = (ListView) findViewById(R.id.listView1);
 
-	}
+		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+				this, R.array.works, android.R.layout.simple_list_item_1);
+		myListView.setAdapter(adapter);
 
-	public void onClick(View v) {
-		switch (v.getId()) {
-		case R.id.t_button:
-			Intent i = new Intent(this, t_adjust.class);
-			startActivity(i);
-			// break;
-			// More buttons go here (if any) ...
-		}
+		myListView.setOnItemClickListener(new OnItemClickListener() {
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				Log.d(LOG_TAG, "itemClick: position = " + position + ", id = "
+						+ id);
+			}
+		});
+
+		myListView.setOnItemSelectedListener(new OnItemSelectedListener() {
+			public void onItemSelected(AdapterView<?> parent, View view,
+					int position, long id) {
+				Log.d(LOG_TAG, "itemSelect: position = " + position + ", id = "
+						+ id);
+			}
+
+			public void onNothingSelected(AdapterView<?> parent) {
+				Log.d(LOG_TAG, "itemSelect: nothing");
+			}
+		});
+
 	}
 
 	public boolean onCreateOptionsMenu(Menu menu) {
