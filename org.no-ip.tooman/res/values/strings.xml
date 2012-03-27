@@ -29,6 +29,11 @@
         <item >Перегонка</item>
         <item >Температура кипения</item>
         <item >Плотность</item>
-        <item >Опохмел</item>
+        <item >Реальная мощность нагрева</item>
     </string-array>
+        <string name="nomU">Номинальное напряжение ТЭНа, В</string>
+        <string name="power">Расчёт реальной мощности нагревателя</string>
+        <string name="nomP">Номинальная мощность ТЭНа, Вт</string>
+        <string name="realU">Напряжение в сети, В</string>
+        <string name="realP">Реальная мощность ТЭНа, Вт</string>
 </resources>

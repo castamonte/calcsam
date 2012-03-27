@@ -13,7 +13,6 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class hello extends Activity {
@@ -33,13 +32,15 @@ public class hello extends Activity {
 		myListView.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				Log.d(LOG_TAG, "itemClick: position = " + position + ", id = "
-						+ id);
+				Log.d(LOG_TAG, "itemClick: position = " + position + ", id = "	+ id);
 				Intent myIntent = null;
 
-				if (position == 0) {
-					myIntent = new Intent(view.getContext(), t_adjust.class);
-				}
+				if (position == 0) {myIntent = new Intent(view.getContext(), t_adjust.class);}
+				if (position == 1) {myIntent = new Intent(view.getContext(), t_adjust.class);}
+				if (position == 2) {myIntent = new Intent(view.getContext(), t_adjust.class);}
+				if (position == 3) {myIntent = new Intent(view.getContext(), t_adjust.class);}
+				if (position == 4) {myIntent = new Intent(view.getContext(), t_adjust.class);}
+				if (position == 5) {myIntent = new Intent(view.getContext(), realheat.class);}
 
 				startActivity(myIntent);
 

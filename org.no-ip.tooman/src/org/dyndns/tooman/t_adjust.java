@@ -8,7 +8,7 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import org.dyndns.tooman.Desterm;
+import org.dyndns.tooman.desterm;
 
 public class t_adjust extends Activity {
 	private EditText ar0, t0, t1;
