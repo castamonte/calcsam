@@ -36,7 +36,7 @@ public class hello extends Activity {
 				Intent myIntent = null;
 
 				if (position == 0) {myIntent = new Intent(view.getContext(), t_adjust.class);}
-				if (position == 1) {myIntent = new Intent(view.getContext(), t_adjust.class);}
+				if (position == 1) {myIntent = new Intent(view.getContext(), dilution.class);}
 				if (position == 2) {myIntent = new Intent(view.getContext(), t_adjust.class);}
 				if (position == 3) {myIntent = new Intent(view.getContext(), t_adjust.class);}
 				if (position == 4) {myIntent = new Intent(view.getContext(), t_adjust.class);}

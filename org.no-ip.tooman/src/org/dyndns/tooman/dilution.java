@@ -4,9 +4,13 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+
 
 
 public class dilution extends Activity {
@@ -15,17 +19,23 @@ public class dilution extends Activity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dilution);
-    
-        final EditText edtext = (EditText)findViewById(R.id.editText1);
-        final Button button = (Button) findViewById(R.id.button);
-    
-        button.setOnClickListener(new OnClickListener() {
-			@Override
-		    public void onClick(View v) {
-				edtext.setText("Здравствуй, друг");
-				Toast.makeText(dilution.this, "ипануццо!", Toast.LENGTH_SHORT).show();
-		    }
-
-        });
+		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+				this, R.array.liquid, android.R.layout.simple_list_item_1);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        Spinner spinner = (Spinner) findViewById(R.id.spinner1);
+        spinner.setAdapter(adapter);
+        spinner.setSelection(0);
+        // устанавливаем обработчик нажатия
+        spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
+      @Override
+      public void onItemSelected(AdapterView<?> parent, View view,
+          int position, long id) {
+        // показываем позиция нажатого элемента
+        Toast.makeText(getBaseContext(), "Position = " + position, 1000).show();
+      }
+      @Override
+      public void onNothingSelected(AdapterView<?> arg0) {
+      }
+    }); 
     }	
 }

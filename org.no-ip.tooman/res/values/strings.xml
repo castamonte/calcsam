@@ -4,7 +4,7 @@
     <string name="app_name">Калькулятор самогонщика</string>
     <color name="myColor">#088</color>
     <string name="greeting">Поздороваться</string>
-    <string name="dilution">Разведение</string>
+    <string name="dilution">Разведение спирта</string>
     <string name="mixing">Смешение</string>
     <string name="steam">Пар</string>
     <string name="distillation">Перегонка</string>
@@ -25,7 +25,7 @@
     <string name="t_ro1">Конечная плотность (кг/л)</string>
     <string-array name="works">
         <item >Температурный пересчёт концентрации</item>
-        <item >Смешение растворов</item>
+        <item >Разведение спирта</item>
         <item >Перегонка</item>
         <item >Температура кипения</item>
         <item >Плотность</item>
@@ -36,4 +36,9 @@
         <string name="nomP">Номинальная мощность ТЭНа, Вт</string>
         <string name="realU">Напряжение в сети, В</string>
         <string name="realP">Реальная мощность ТЭНа, Вт</string>
+        <string-array name="liquid">
+            <item >Объем исходного спирта</item>
+            <item >Объём воды</item>
+            <item >Объём результата</item>
+        </string-array>
 </resources>
