@@ -29,9 +29,9 @@ public final class R {
         public static final int dilution=0x7f09001f;
         public static final int distillation=0x7f090022;
         public static final int editText1=0x7f090004;
-        public static final int editText2=0x7f090017;
-        public static final int editText3=0x7f090007;
-        public static final int editText4=0x7f09000a;
+        public static final int editText2=0x7f090007;
+        public static final int editText3=0x7f09000a;
+        public static final int editText4=0x7f090017;
         public static final int editText5=0x7f090018;
         public static final int editText6=0x7f090019;
         public static final int linearLayout1=0x7f09001b;
@@ -79,6 +79,11 @@ public final class R {
         public static final int app_name=0x7f040001;
         public static final int boil=0x7f04000e;
         public static final int density=0x7f040008;
+        public static final int dil_rezt=0x7f04001c;
+        public static final int dil_spirit0=0x7f04001b;
+        public static final int dil_v_aqua=0x7f04001e;
+        public static final int dil_v_rezt=0x7f04001f;
+        public static final int dil_v_spirit=0x7f04001d;
         public static final int dilution=0x7f040003;
         public static final int distillation=0x7f040006;
         public static final int greeting=0x7f040002;
@@ -106,5 +111,6 @@ public final class R {
     }
     public static final class style {
         public static final int PageHeader=0x7f070000;
+        public static final int styleDefault=0x7f070001;
     }
 }

@@ -37,8 +37,13 @@
         <string name="realU">Напряжение в сети, В</string>
         <string name="realP">Реальная мощность ТЭНа, Вт</string>
         <string-array name="liquid">
-            <item >Объем исходного спирта</item>
+            <item >Объем спирта</item>
             <item >Объём воды</item>
             <item >Объём результата</item>
         </string-array>
+            <string name="dil_spirit0">Крепость исходного спирта (об.%)</string>
+            <string name="dil_rezt">Крепость результата (об.%)</string>
+            <string name="dil_v_spirit">Объём исходного спирта</string>
+            <string name="dil_v_aqua">Объём воды</string>
+            <string name="dil_v_rezt">Объём результата</string>
 </resources>
