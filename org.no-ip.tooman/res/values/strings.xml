@@ -10,7 +10,7 @@
     <string name="distillation">Перегонка</string>
     <string name="t_adjust">Температурный пересчёт</string>
     <string name="density">Плотность</string>
-    <string name="mixing_caption">Смешение растворов</string>
+    <string name="mixing_caption">Смешивание растворов</string>
     <string name="volume">V</string>
     <string name="proc">% спирта</string>
     <string name="ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum nibh in ligula suscipit eu venenatis enim congue. Aliquam at pulvinar quam. Donec et felis ligula, sed cursus eros. Donec ac quam in neque ullamcorper ullamcorper ac sit amet elit. Phasellus sollicitudin tortor nec nunc euismod faucibus. Donec nec nulla odio. Mauris id pellentesque tellus. Aenean luctus velit massa, vel lacinia odio. Aliquam imperdiet sodales turpis a egestas. Mauris tristique ligula id nisl tempus dapibus.</string>
@@ -26,7 +26,7 @@
     <string-array name="works">
         <item >Температурный пересчёт концентрации</item>
         <item >Разведение спирта</item>
-        <item >Перегонка</item>
+        <item >Смешивание</item>
         <item >Температура кипения</item>
         <item >Плотность</item>
         <item >Реальная мощность нагрева</item>
@@ -46,4 +46,10 @@
             <string name="dil_v_spirit">Объём исходного спирта</string>
             <string name="dil_v_aqua">Объём воды</string>
             <string name="dil_v_rezt">Объём результата</string>
+            <string name="mix_sp1">Крепость первой жидкости</string>
+            <string name="mix_v1">Объём первой жидкости</string>
+            <string name="mix_sp2">Крепость второй жидкости</string>
+            <string name="mix_v2">Объём второй жидкости</string>
+            <string name="mix_str">Крепость смеси</string>
+            <string name="mix_vr">Объём смеси</string>
 </resources>

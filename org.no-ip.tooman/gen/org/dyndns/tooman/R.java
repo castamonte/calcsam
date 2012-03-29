@@ -23,25 +23,23 @@ public final class R {
         public static final int samogonschiki=0x7f020002;
     }
     public static final class id {
-        public static final int button1=0x7f09001c;
-        public static final int button2=0x7f09001e;
-        public static final int density=0x7f090024;
-        public static final int dilution=0x7f09001f;
-        public static final int distillation=0x7f090022;
+        public static final int button1=0x7f09001a;
+        public static final int button2=0x7f09001c;
+        public static final int density=0x7f090022;
+        public static final int dilution=0x7f09001d;
+        public static final int distillation=0x7f090020;
         public static final int editText1=0x7f090004;
         public static final int editText2=0x7f090007;
         public static final int editText3=0x7f09000a;
         public static final int editText4=0x7f090017;
-        public static final int editText5=0x7f090018;
-        public static final int editText6=0x7f090019;
-        public static final int linearLayout1=0x7f09001b;
-        public static final int linearLayout2=0x7f09001d;
+        public static final int linearLayout1=0x7f090019;
+        public static final int linearLayout2=0x7f09001b;
         public static final int listView1=0x7f090015;
-        public static final int mixing=0x7f090020;
+        public static final int mixing=0x7f09001e;
         public static final int mixing_caption=0x7f090016;
         public static final int spinner1=0x7f090009;
-        public static final int steam=0x7f090021;
-        public static final int t_adjust=0x7f090023;
+        public static final int steam=0x7f09001f;
+        public static final int t_adjust=0x7f090021;
         public static final int tableLayout1=0x7f090001;
         public static final int tableLayout2=0x7f09000b;
         public static final int tableRow1=0x7f090002;
@@ -50,7 +48,7 @@ public final class R {
         public static final int tableRow4=0x7f09000c;
         public static final int tableRow5=0x7f09000f;
         public static final int tableRow6=0x7f090012;
-        public static final int textView0=0x7f09001a;
+        public static final int textView0=0x7f090018;
         public static final int textView1=0x7f090000;
         public static final int textView2=0x7f090003;
         public static final int textView3=0x7f090006;
@@ -89,6 +87,12 @@ public final class R {
         public static final int greeting=0x7f040002;
         public static final int hello=0x7f040000;
         public static final int ipsum=0x7f04000c;
+        public static final int mix_sp1=0x7f040020;
+        public static final int mix_sp2=0x7f040022;
+        public static final int mix_str=0x7f040024;
+        public static final int mix_v1=0x7f040021;
+        public static final int mix_v2=0x7f040023;
+        public static final int mix_vr=0x7f040025;
         public static final int mixing=0x7f040004;
         public static final int mixing_caption=0x7f040009;
         public static final int nomP=0x7f040018;

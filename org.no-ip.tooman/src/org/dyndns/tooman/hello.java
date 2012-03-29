@@ -3,14 +3,14 @@ package org.dyndns.tooman;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
+//import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.AdapterView.OnItemSelectedListener;
+//import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -32,12 +32,12 @@ public class hello extends Activity {
 		myListView.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				Log.d(LOG_TAG, "itemClick: position = " + position + ", id = "	+ id);
+//				Log.d(LOG_TAG, "itemClick: position = " + position + ", id = "	+ id);
 				Intent myIntent = null;
 
 				if (position == 0) {myIntent = new Intent(view.getContext(), t_adjust.class);}
 				if (position == 1) {myIntent = new Intent(view.getContext(), dilution.class);}
-				if (position == 2) {myIntent = new Intent(view.getContext(), t_adjust.class);}
+				if (position == 2) {myIntent = new Intent(view.getContext(), mixing.class);}
 				if (position == 3) {myIntent = new Intent(view.getContext(), t_adjust.class);}
 				if (position == 4) {myIntent = new Intent(view.getContext(), t_adjust.class);}
 				if (position == 5) {myIntent = new Intent(view.getContext(), realheat.class);}
@@ -47,7 +47,7 @@ public class hello extends Activity {
 			}
 		});
 
-		myListView.setOnItemSelectedListener(new OnItemSelectedListener() {
+/*		myListView.setOnItemSelectedListener(new OnItemSelectedListener() {
 			public void onItemSelected(AdapterView<?> parent, View view,
 					int position, long id) {
 				Log.d(LOG_TAG, "itemSelect: position = " + position + ", id = "
@@ -58,7 +58,7 @@ public class hello extends Activity {
 				Log.d(LOG_TAG, "itemSelect: nothing");
 			}
 		});
-
+*/
 	}
 
 	public boolean onCreateOptionsMenu(Menu menu) {
