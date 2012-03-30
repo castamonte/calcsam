@@ -27,7 +27,7 @@
         <item >Температурный пересчёт концентрации</item>
         <item >Разведение спирта</item>
         <item >Смешивание</item>
-        <item >Температура кипения</item>
+        <item >Скорость отбора</item>
         <item >Плотность</item>
         <item >Реальная мощность нагрева</item>
     </string-array>
@@ -52,4 +52,11 @@
             <string name="mix_v2">Объём второй жидкости</string>
             <string name="mix_str">Крепость смеси</string>
             <string name="mix_vr">Объём смеси</string>
+            <string name="selection">Скорость отбора</string>
+            <string name="sel_lh">Скорость отбора в л/ч</string>
+            <string name="sel_ml">Отбор, мл</string>
+            <string name="sel_t">Время отбора, с</string>
+            <string name="s_btnStart">Старт</string>
+            <string name="s_btnStop">Стоп</string>
+            <string name="s_btnReset">Сброс</string>
 </resources>

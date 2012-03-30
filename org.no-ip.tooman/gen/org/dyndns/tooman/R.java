@@ -23,7 +23,7 @@ public final class R {
         public static final int samogonschiki=0x7f020002;
     }
     public static final class id {
-        public static final int button1=0x7f09001a;
+        public static final int button1=0x7f090019;
         public static final int button2=0x7f09001c;
         public static final int density=0x7f090022;
         public static final int dilution=0x7f09001d;
@@ -32,7 +32,7 @@ public final class R {
         public static final int editText2=0x7f090007;
         public static final int editText3=0x7f09000a;
         public static final int editText4=0x7f090017;
-        public static final int linearLayout1=0x7f090019;
+        public static final int linearLayout1=0x7f09001a;
         public static final int linearLayout2=0x7f09001b;
         public static final int listView1=0x7f090015;
         public static final int mixing=0x7f09001e;
@@ -64,9 +64,9 @@ public final class R {
         public static final int dilution=0x7f030001;
         public static final int distillation=0x7f030002;
         public static final int hello=0x7f030003;
-        public static final int main=0x7f030004;
-        public static final int mixing=0x7f030005;
-        public static final int realheat=0x7f030006;
+        public static final int mixing=0x7f030004;
+        public static final int realheat=0x7f030005;
+        public static final int selection=0x7f030006;
         public static final int steam=0x7f030007;
         public static final int t_adjust=0x7f030008;
     }
@@ -101,6 +101,13 @@ public final class R {
         public static final int proc=0x7f04000b;
         public static final int realP=0x7f04001a;
         public static final int realU=0x7f040019;
+        public static final int s_btnReset=0x7f04002c;
+        public static final int s_btnStart=0x7f04002a;
+        public static final int s_btnStop=0x7f04002b;
+        public static final int sel_lh=0x7f040027;
+        public static final int sel_ml=0x7f040028;
+        public static final int sel_t=0x7f040029;
+        public static final int selection=0x7f040026;
         public static final int spirit_pro=0x7f04000d;
         public static final int steam=0x7f040005;
         public static final int t_adjust=0x7f040007;

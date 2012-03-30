@@ -20,6 +20,7 @@
         <activity android:name=".t_adjust"></activity>
         <activity android:name=".density"></activity>
         <activity android:name=".realheat"></activity>
+        <activity android:name="selection"></activity>
         
     </application>
 </manifest>
