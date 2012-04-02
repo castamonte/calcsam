@@ -19,36 +19,6 @@
         android:id="@+id/tableLayout1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" >
-
-        <TableRow
-            android:id="@+id/tableRow1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:baselineAligned="true" >
-
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1"
-                android:text="@string/sel_lh"
-                android:textSize="14dp" >
-            </TextView>
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="0"
-                android:gravity="right"
-                android:text="1"
-                android:textColor="@color/myColor"
-                android:textSize="24dp"
-                android:textStyle="bold" >
-            </TextView>
-        </TableRow>
         
         <TableRow
             android:id="@+id/tableRow2"
@@ -102,6 +72,36 @@
                 android:layout_weight="0"
                 android:gravity="right"
                 android:text="36.0"
+                android:textColor="@color/myColor"
+                android:textSize="24dp"
+                android:textStyle="bold" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/sel_lh"
+                android:textSize="14dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:gravity="right"
+                android:text="1"
                 android:textColor="@color/myColor"
                 android:textSize="24dp"
                 android:textStyle="bold" >
