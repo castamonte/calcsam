@@ -14,10 +14,10 @@ import android.widget.TextView;
 
 public class selection extends Activity {
 	private EditText ml;
-	private TextView lh, ts, t;
+	private TextView lh, mls, ts, t;
 	private Button knopka;
 	private int i_ml, deciseconds;
-	private double d_lh;
+	private double d_lh, d_mls;
 	TimerTask counter;
 	Timer timer;
 	boolean tiktak;
@@ -33,6 +33,7 @@ public class selection extends Activity {
 		deciseconds = 0;
 		ml = (EditText) findViewById(R.id.editText1);
 		lh = (TextView) findViewById(R.id.textView2);
+		mls = (TextView) findViewById(R.id.textView8);
 		ts = (TextView) findViewById(R.id.textView5);
 		t = (TextView) findViewById(R.id.textView6);
 		knopka = (Button) findViewById(R.id.button1);
@@ -45,9 +46,11 @@ public class selection extends Activity {
 					ts.setText(seconds_i);
 					t.setText("0.0");
 					i_ml = (int) Integer.parseInt(ml.getText().toString());
-					d_lh = 36.0*i_ml/deciseconds;
+					d_mls = 10.0*i_ml/deciseconds;
+					d_lh = 3.6*d_mls;
 //					lh.setText(String.valueOf(d_lh));
 					lh.setText(String.format("%.2f", d_lh));
+					mls.setText(String.format("%.2f", d_mls));
 				} else {
 					knopka.setText(getString(R.string.s_btnStop));
 					tiktak = true;

@@ -53,10 +53,11 @@
             <string name="mix_str">Крепость смеси</string>
             <string name="mix_vr">Объём смеси</string>
             <string name="selection">Скорость отбора</string>
-            <string name="sel_lh">Скорость отбора в л/ч</string>
+            <string name="sel_lh">Скорость отбора, л/ч</string>
             <string name="sel_ml">Отбор, мл</string>
             <string name="sel_t">Время отбора, с</string>
             <string name="s_btnStart">Старт</string>
             <string name="s_btnStop">Стоп</string>
             <string name="s_btnReset">Сброс</string>
+            <string name="sel_mls">&quot;    мл/с &quot;</string>
 </resources>

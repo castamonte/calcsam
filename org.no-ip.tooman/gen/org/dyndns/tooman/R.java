@@ -106,6 +106,7 @@ public final class R {
         public static final int s_btnStop=0x7f04002b;
         public static final int sel_lh=0x7f040027;
         public static final int sel_ml=0x7f040028;
+        public static final int sel_mls=0x7f04002d;
         public static final int sel_t=0x7f040029;
         public static final int selection=0x7f040026;
         public static final int spirit_pro=0x7f04000d;
