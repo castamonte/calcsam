@@ -28,7 +28,7 @@
         <item >Разведение спирта</item>
         <item >Смешивание</item>
         <item >Скорость отбора</item>
-        <item >Плотность</item>
+        <item >Перегонка</item>
         <item >Реальная мощность нагрева</item>
     </string-array>
         <string name="nomU">Номинальное напряжение ТЭНа, В</string>
@@ -60,4 +60,10 @@
             <string name="s_btnStop">Стоп</string>
             <string name="s_btnReset">Сброс</string>
             <string name="sel_mls">&quot;    мл/с &quot;</string>
+            <string name="dist_begin_t">Температура в начале </string>
+            <string name="dist_end_t">Температура в конце</string>
+            <string name="dist_obp">об. %</string>
+            <string name="dist_braga">Объём браги</string>
+            <string name="dist_res_s">Cамогон, об.%</string>
+            <string name="dist_res_v">Объём</string>
 </resources>

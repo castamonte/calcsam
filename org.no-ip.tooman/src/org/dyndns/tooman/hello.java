@@ -39,7 +39,7 @@ public class hello extends Activity {
 				if (position == 1) {myIntent = new Intent(view.getContext(), dilution.class);}
 				if (position == 2) {myIntent = new Intent(view.getContext(), mixing.class);}
 				if (position == 3) {myIntent = new Intent(view.getContext(), selection.class);}
-				if (position == 4) {myIntent = new Intent(view.getContext(), t_adjust.class);}
+				if (position == 4) {myIntent = new Intent(view.getContext(), distillation.class);}
 				if (position == 5) {myIntent = new Intent(view.getContext(), realheat.class);}
 
 				startActivity(myIntent);
