@@ -16,7 +16,7 @@ public class distillation extends Activity {
 	private double d_v_res, d_s0, d_s_end;
 
 	EditText.OnEditorActionListener etListener = new EditText.OnEditorActionListener() {
-		@Override
+//		@Override
 		public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
 //			Log.i("IME", Integer.toString(actionId));
 			if (actionId == EditorInfo.IME_ACTION_DONE

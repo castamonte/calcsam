@@ -23,7 +23,7 @@ public class dilution extends Activity {
 	private int i_vol0, i_volWater, i_volResult;
 
 	EditText.OnEditorActionListener etListener = new EditText.OnEditorActionListener() {
-		@Override
+//		@Override
 		public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
 			Log.i("IME", Integer.toString(actionId));
 			if (actionId == EditorInfo.IME_ACTION_DONE
@@ -50,13 +50,15 @@ public class dilution extends Activity {
 		volResult = (TextView) findViewById(R.id.textView9);
 
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
-				this, R.array.liquid, android.R.layout.simple_list_item_1);
+				this, R.array.liquid, R.layout.spinnerlayout);
+//		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+//				this, R.array.liquid, android.R.layout.simple_list_item_1);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		Spinner spinner = (Spinner) findViewById(R.id.spinner1);
 		spinner.setAdapter(adapter);
 		spinner.setSelection(0);
 		spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
-			@Override
+//			@Override
 			public void onItemSelected(AdapterView<?> parent, View view,
 					int position, long id) {
 				// Toast.makeText(getBaseContext(), "Position = " + position,
@@ -65,7 +67,7 @@ public class dilution extends Activity {
 				recalc();
 			}
 
-			@Override
+//			@Override
 			public void onNothingSelected(AdapterView<?> arg0) {
 			}
 		});

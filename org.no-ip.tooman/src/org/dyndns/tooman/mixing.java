@@ -15,7 +15,7 @@ public class mixing extends Activity {
 	private int i_st1, i_st2, i_str, i_v1, i_v2, i_vr;
 
 	EditText.OnEditorActionListener etListener = new EditText.OnEditorActionListener() {
-		@Override
+//		@Override
 		public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
 			Log.i("IME", Integer.toString(actionId));
 			if (actionId == EditorInfo.IME_ACTION_DONE

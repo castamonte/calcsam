@@ -15,7 +15,7 @@ public class realheat extends Activity {
 	private int i_nomu, i_nomp, i_realu, i_realp;
 
 	EditText.OnEditorActionListener etListener = new EditText.OnEditorActionListener() {
-		@Override
+//		@Override
 		public boolean onEditorAction(TextView v, int actionId,	KeyEvent event) {
 			Log.i("IME", Integer.toString(actionId));			
 			if (actionId == EditorInfo.IME_ACTION_DONE 

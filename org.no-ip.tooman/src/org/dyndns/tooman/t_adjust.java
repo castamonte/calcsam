@@ -17,7 +17,7 @@ public class t_adjust extends Activity {
 	
 	
 	TextView.OnEditorActionListener etListener = new TextView.OnEditorActionListener() {
-		@Override
+//		@Override
 		public boolean onEditorAction(TextView exampleView, int actionId,
 				KeyEvent event) {
 			if (actionId == EditorInfo.IME_ACTION_DONE

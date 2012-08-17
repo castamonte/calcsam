@@ -2,7 +2,7 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
     <style name="PageHeader" parent="android:Widget.TextView">
         <item name="android:textColor">@color/myColor</item>
-        <item name="android:textSize">18dp</item>
+        <item name="android:textSize">24dp</item>
         <item name="android:textStyle">bold</item>
     </style>
     <style name="styleDefault" parent="android:Widget.TextView">
