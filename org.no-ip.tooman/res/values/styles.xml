@@ -7,5 +7,6 @@
     </style>
     <style name="styleDefault" parent="android:Widget.TextView">
         <item name="android:textSize">14dp</item>
+        <item name="android:layout_height">36dp</item>
     </style>
 </resources>

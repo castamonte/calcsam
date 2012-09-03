@@ -49,7 +49,7 @@ public class selection extends Activity {
 					d_mls = 10.0*i_ml/deciseconds;
 					d_lh = 3.6*d_mls;
 //					lh.setText(String.valueOf(d_lh));
-					lh.setText(String.format("%.2f", d_lh));
+					lh.setText(String.format("%.3f", d_lh));
 					mls.setText(String.format("%.2f", d_mls));
 				} else {
 					knopka.setText(getString(R.string.s_btnStop));
