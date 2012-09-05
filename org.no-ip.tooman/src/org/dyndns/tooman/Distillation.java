@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class distillation extends Activity {
+public class Distillation extends Activity {
 	private EditText amount, t0, t_end;
 	private TextView s0, s_end, s_res, v_res;
 	private int i_amount, i_t0, i_t_end, i_s_res;

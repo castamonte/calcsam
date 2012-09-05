@@ -35,11 +35,11 @@ public class hello extends Activity {
 //				Log.d(LOG_TAG, "itemClick: position = " + position + ", id = "	+ id);
 				Intent myIntent = null;
 
-				if (position == 0) {myIntent = new Intent(view.getContext(), dilution.class);}
-				if (position == 1) {myIntent = new Intent(view.getContext(), mixing.class);}
-				if (position == 2) {myIntent = new Intent(view.getContext(), selection.class);}
-				if (position == 3) {myIntent = new Intent(view.getContext(), realheat.class);}
-				if (position == 4) {myIntent = new Intent(view.getContext(), condenser.class);}
+				if (position == 0) {myIntent = new Intent(view.getContext(), Dilution.class);}
+				if (position == 1) {myIntent = new Intent(view.getContext(), Mixing.class);}
+				if (position == 2) {myIntent = new Intent(view.getContext(), Selection.class);}
+				if (position == 3) {myIntent = new Intent(view.getContext(), Realheat.class);}
+				if (position == 4) {myIntent = new Intent(view.getContext(), Condenser.class);}
 //				if (position == 4) {myIntent = new Intent(view.getContext(), distillation.class);}
 //				if (position == 5) {myIntent = new Intent(view.getContext(), t_adjust.class);}
 
@@ -47,27 +47,19 @@ public class hello extends Activity {
 
 			}
 		});
-
-/*		myListView.setOnItemSelectedListener(new OnItemSelectedListener() {
-			public void onItemSelected(AdapterView<?> parent, View view,
-					int position, long id) {
-				Log.d(LOG_TAG, "itemSelect: position = " + position + ", id = "
-						+ id);
-			}
-
-			public void onNothingSelected(AdapterView<?> parent) {
-				Log.d(LOG_TAG, "itemSelect: nothing");
-			}
-		});
-*/
 	}
 
 	public boolean onCreateOptionsMenu(Menu menu) {
-		new MenuInflater(getApplication()).inflate(R.menu.menu, menu);
+/*		new MenuInflater(getApplication()).inflate(R.menu.menu, menu);
 		return (super.onPrepareOptionsMenu(menu));
+*/
+		Intent intent = new Intent(hello.this,Thanks.class);
+		startActivityForResult(intent, 0);
+		return false;
+
 	}
 
-	public boolean onOptionsItemSelected(MenuItem item) {
+/*	public boolean onOptionsItemSelected(MenuItem item) {
 		Intent intent = new Intent();
 		switch (item.getItemId()) {
 		case R.id.dilution:
@@ -105,5 +97,5 @@ public class hello extends Activity {
 		}
 		return (super.onOptionsItemSelected(item));
 	}
-
+*/
 }

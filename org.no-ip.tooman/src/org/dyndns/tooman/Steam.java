@@ -3,7 +3,7 @@ package org.dyndns.tooman;
 import android.app.Activity;
 import android.os.Bundle;
 
-public class steam extends Activity {
+public class Steam extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState)
     {

@@ -34,6 +34,7 @@
             android:gravity="center_vertical|right"
             android:imeOptions="actionDone"
             android:inputType="number"
+            android:selectAllOnFocus="true"
             android:text="3" >
 
             <requestFocus />
@@ -68,7 +69,9 @@
                 android:imeOptions="actionDone"
                 android:inputType="number"
                 android:maxLength="2"
+                android:selectAllOnFocus="true"
                 android:text="92" >
+
             </EditText>
 
             <TextView
@@ -113,7 +116,9 @@
                 android:imeOptions="actionDone"
                 android:inputType="number"
                 android:maxLength="2"
+                android:selectAllOnFocus="true"
                 android:text="98" >
+
             </EditText>
 
             <TextView

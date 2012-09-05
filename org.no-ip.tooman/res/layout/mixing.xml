@@ -44,7 +44,9 @@
                 android:imeOptions="actionDone"
                 android:inputType="number"
                 android:maxLength="3"
+                android:selectAllOnFocus="true"
                 android:text="60" >
+
             </EditText>
 
             </TableRow>
@@ -71,10 +73,12 @@
                 android:layout_width="wrap_content"
                 android:layout_weight="2"
                 android:gravity="center_vertical|right"
-                android:text="200"
                 android:imeOptions="actionDone"
                 android:inputType="number"
-                android:maxLength="3" >
+                android:maxLength="3"
+                android:selectAllOnFocus="true"
+                android:text="200" >
+
             </EditText>
         </TableRow>
 
@@ -100,10 +104,12 @@
                 android:layout_width="wrap_content"
                 android:layout_weight="2"
                 android:gravity="center_vertical|right"
-                android:text="40"
                 android:imeOptions="actionDone"
                 android:inputType="number"
-                android:maxLength="3" >
+                android:maxLength="3"
+                android:selectAllOnFocus="true"
+                android:text="40" >
+
             </EditText>
         </TableRow>
 
@@ -129,10 +135,12 @@
                 android:layout_width="wrap_content"
                 android:layout_weight="2"
                 android:gravity="center_vertical|right"
-                android:text="500"
                 android:imeOptions="actionDone"
                 android:inputType="number"
-                android:maxLength="3" >
+                android:maxLength="3"
+                android:selectAllOnFocus="true"
+                android:text="500" >
+
             </EditText>
         </TableRow>
        

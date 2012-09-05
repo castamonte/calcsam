@@ -81,18 +81,21 @@
     <string name="cons_waterflow">Расход воды, л/мин</string>
     <string name="cons_water_t0">Начальная температура воды</string>
     <string name="cons_spirit_tout">Средняя температура самогона на выходе</string>
+
     <string-array name="condens_mtl">
-        <item >медь</item>
-        <item >нержавейка</item>
+        <item>медь</item>
+        <item>нержавейка</item>
     </string-array>
     <string-array name="condens_d">
-        <item >6</item>
-        <item >8</item>
-        <item >10</item>
-        <item >12</item>
-        <item >15</item>
-        <item >18</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>15</item>
+        <item>18</item>
     </string-array>
-        <string name="cons_smgflow">Средняя производительность по самогону, л/час</string>
+
+    <string name="cons_smgflow">Средняя производительность по самогону, л/час</string>
+    <string name="title_activity_thanks">Спасибо, люди!!</string>
 
 </resources>

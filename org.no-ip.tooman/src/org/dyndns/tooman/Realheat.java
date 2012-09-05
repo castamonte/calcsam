@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class realheat extends Activity {
+public class Realheat extends Activity {
 	private EditText nomu, nomp, realu;
 	private TextView realp;
 	private int i_nomu, i_nomp, i_realu, i_realp;

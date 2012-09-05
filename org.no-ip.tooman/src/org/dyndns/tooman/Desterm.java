@@ -3,7 +3,7 @@ package org.dyndns.tooman;
 import android.util.Log;
 
 // зависимость плотности, спиритуозности и температуры
-public class desterm {
+public class Desterm {
 	// спиритуозность - начальная, искомая, ближайшая снизу, ближайшая сверху
 	public double s0, s;
 	private int s1, s2;

@@ -41,7 +41,9 @@
                 android:imeOptions="actionDone"
                 android:inputType="number"
                 android:maxLength="2"
+                android:selectAllOnFocus="true"
                 android:text="96" >
+
             </EditText>
         </TableRow>
 
@@ -69,7 +71,9 @@
                 android:imeOptions="actionDone"
                 android:inputType="number"
                 android:maxLength="2"
+                android:selectAllOnFocus="true"
                 android:text="40" >
+
             </EditText>
         </TableRow>
 
@@ -94,7 +98,9 @@
                 android:imeOptions="actionDone"
                 android:inputType="number"
                 android:maxLength="4"
+                android:selectAllOnFocus="true"
                 android:text="1000" >
+
             </EditText>
         </TableRow>
     </TableLayout>

@@ -9,7 +9,7 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class mixing extends Activity {
+public class Mixing extends Activity {
 	private EditText st1, st2, v1, v2;
 	private TextView str, vr;
 	private int i_st1, i_st2, i_str, i_v1, i_v2, i_vr;

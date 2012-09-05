@@ -43,7 +43,8 @@
                 android:hint="96"
                 android:imeOptions="actionDone"
                 android:inputType="number"
-                android:maxLength="2" >
+                android:maxLength="2"
+                android:selectAllOnFocus="true" >
 
                 <requestFocus />
             </EditText>
@@ -72,7 +73,9 @@
                 android:hint="20"
                 android:imeOptions="actionDone"
                 android:inputType="numberDecimal"
-                android:maxLength="2" >
+                android:maxLength="2"
+                android:selectAllOnFocus="true" >
+
             </EditText>
         </TableRow>
 
@@ -99,7 +102,9 @@
                 android:hint="20"
                 android:imeOptions="actionDone"
                 android:inputType="numberDecimal"
-                android:maxLength="2" >
+                android:maxLength="2"
+                android:selectAllOnFocus="true" >
+
             </EditText>
         </TableRow>
 

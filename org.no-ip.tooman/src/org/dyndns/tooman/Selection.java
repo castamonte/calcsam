@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class selection extends Activity {
+public class Selection extends Activity {
 	private EditText ml;
 	private TextView lh, mls, ts, t;
 	private Button knopka;

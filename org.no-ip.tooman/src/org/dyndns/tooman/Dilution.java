@@ -16,7 +16,7 @@ import android.widget.TextView;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-public class dilution extends Activity {
+public class Dilution extends Activity {
 	private EditText st0, stResult, vol;
 	private TextView vol0, volWater, volResult;
 	private int fw, i_st0, i_stResult, i_vol;
