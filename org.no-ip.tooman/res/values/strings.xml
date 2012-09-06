@@ -5,15 +5,11 @@
     <string name="app_name">Калькулятор самогонщика</string>
 
     <color name="myColor">#088</color>
-
-    <string name="greeting">Поздороваться</string>
-    <string name="dilution">Разведение спирта</string>
     <string name="mixing">Смешение</string>
     <string name="steam">Пар</string>
-    <string name="distillation">Перегонка</string>
     <string name="t_adjust">Температурный пересчёт</string>
     <string name="density">Плотность</string>
-    <string name="mixing_caption">Смешивание растворов</string>
+    <string name="title_activity_mixing">Смешивание растворов</string>
     <string name="volume">V</string>
     <string name="proc">% спирта</string>
     <string name="ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum nibh in ligula suscipit eu venenatis enim congue. Aliquam at pulvinar quam. Donec et felis ligula, sed cursus eros. Donec ac quam in neque ullamcorper ullamcorper ac sit amet elit. Phasellus sollicitudin tortor nec nunc euismod faucibus. Donec nec nulla odio. Mauris id pellentesque tellus. Aenean luctus velit massa, vel lacinia odio. Aliquam imperdiet sodales turpis a egestas. Mauris tristique ligula id nisl tempus dapibus.</string>
@@ -58,7 +54,6 @@
     <string name="mix_v2">Объём второй жидкости</string>
     <string name="mix_str">Крепость смеси</string>
     <string name="mix_vr">Объём смеси</string>
-    <string name="selection">Скорость отбора</string>
     <string name="sel_lh">Скорость отбора, л/ч</string>
     <string name="sel_ml">Отбор, мл</string>
     <string name="sel_t">Время отбора, с</string>
@@ -72,10 +67,8 @@
     <string name="dist_braga">Объём браги</string>
     <string name="dist_res_s">Cамогон, об.%</string>
     <string name="dist_res_v">Объём</string>
-    <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_condenser">condenser</string>
-    <string name="condenser">Расчёт прямоточного холодильника</string>
+    
     <string name="cons_power_cube">Мощность нагревания куба</string>
     <string name="cons_teploss">Теплопотери системы, %%</string>
     <string name="cons_waterflow">Расход воды, л/мин</string>
@@ -95,7 +88,11 @@
         <item>18</item>
     </string-array>
 
-    <string name="cons_smgflow">Средняя производительность по самогону, л/час</string>
+    <string name="cons_smgflow">Средняя производительность по самогону, л/час</string><string name="title_activity_condenser">Расчёт прямоточного холодильника</string>
     <string name="title_activity_thanks">Спасибо, люди!!</string>
+    <string name="title_activity_dilution">Разведение спирта</string>
+    <string name="title_activity_distillation">Перегонка браги</string>
+    <string name="title_activity_realheat">Расчёт мощности ТЭНа</string>
+    <string name="title_activity_selection">Скорость отбора</string>
 
 </resources>

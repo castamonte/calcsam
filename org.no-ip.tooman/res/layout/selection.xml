@@ -5,16 +5,6 @@
     android:minWidth="64dp"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/textView0"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="8dp"
-        android:text="@string/selection"
-        android:textAppearance="@style/PageHeader" >
-    </TextView>
-
     <TableLayout
         android:id="@+id/tableLayout1"
         android:layout_width="fill_parent"
