@@ -40,7 +40,7 @@ public class hello extends Activity {
 				if (position == 2) {myIntent = new Intent(view.getContext(), Selection.class);}
 				if (position == 3) {myIntent = new Intent(view.getContext(), Realheat.class);}
 				if (position == 4) {myIntent = new Intent(view.getContext(), Condenser.class);}
-//				if (position == 4) {myIntent = new Intent(view.getContext(), distillation.class);}
+				if (position == 5) {myIntent = new Intent(view.getContext(), Fruit.class);}
 //				if (position == 5) {myIntent = new Intent(view.getContext(), t_adjust.class);}
 
 				startActivity(myIntent);

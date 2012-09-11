@@ -2,9 +2,17 @@
 <resources>
 
     <string name="hello">Привет, мир, привет!</string>
-    <string name="app_name">Калькулятор самогонщика</string>
+    <string name="app_name">Калькулятор самогонщика</string><string-array name="works">
+        <item>Разведение спирта</item>
+        <item>Смешивание</item>
+        <item>Скорость отбора</item>
+        <item>Реальная мощность нагрева</item>
+        <item>Расчёт холодильника</item>
+        <item >Расчёт фруктовой бражки</item>
+    </string-array>
 
     <color name="myColor">#088</color>
+
     <string name="mixing">Смешение</string>
     <string name="steam">Пар</string>
     <string name="t_adjust">Температурный пересчёт</string>
@@ -23,13 +31,7 @@
     <string name="t_ro0">Текущая плотность (кг/л)</string>
     <string name="t_ro1">Конечная плотность (кг/л)</string>
 
-    <string-array name="works">
-        <item>Разведение спирта</item>
-        <item>Смешивание</item>
-        <item>Скорость отбора</item>
-        <item>Реальная мощность нагрева</item>
-        <item>Расчёт холодильника</item>
-    </string-array>
+    
 
     <string name="nomU">Номинальное напряжение ТЭНа, В</string>
     <string name="power">Расчёт реальной мощности нагревателя</string>
@@ -68,7 +70,6 @@
     <string name="dist_res_s">Cамогон, об.%</string>
     <string name="dist_res_v">Объём</string>
     <string name="menu_settings">Settings</string>
-    
     <string name="cons_power_cube">Мощность нагревания куба</string>
     <string name="cons_teploss">Теплопотери системы, %%</string>
     <string name="cons_waterflow">Расход воды, л/мин</string>
@@ -88,11 +89,51 @@
         <item>18</item>
     </string-array>
 
-    <string name="cons_smgflow">Средняя производительность по самогону, л/час</string><string name="title_activity_condenser">Расчёт прямоточного холодильника</string>
+    <string name="cons_smgflow">Средняя производительность по самогону, л/час</string>
+    <string name="title_activity_condenser">Расчёт прямоточного холодильника</string>
     <string name="title_activity_thanks">Спасибо, люди!!</string>
     <string name="title_activity_dilution">Разведение спирта</string>
     <string name="title_activity_distillation">Перегонка браги</string>
     <string name="title_activity_realheat">Расчёт мощности ТЭНа</string>
     <string name="title_activity_selection">Скорость отбора</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_fruit">Фруктовая брага</string>
+    <string name="fr_sugar">  % сахара</string>
+    <string-array name="fruit_name">
+        <item >брусника</item>
+        <item >виноград</item>
+        <item >вишня</item>
+        <item >груши</item>
+        <item >ежевика</item>
+        <item >ирга</item>
+        <item >крыжовник</item>
+        <item >клубника</item>
+        <item >малина</item>
+        <item >смородина красная</item>
+        <item >смородина чёрная</item>
+        <item >черника</item>
+        <item >яблоки</item>
+    </string-array>
+    <integer-array name="fruit_sugar">
+        <item >7</item>
+        <item >15</item>
+        <item >12</item>
+        <item >7</item>
+        <item >6</item>
+        <item >5</item>
+        <item >9</item>
+        <item >7</item>
+        <item >7</item>
+        <item >7</item>
+        <item >11</item>
+        <item >6</item>
+        <item >18</item>
+    </integer-array>
+        <string name="fr_real_spirit">получается крепость браги, об. %</string>
+        <string name="fr_wish_spirit">желаемая крепость браги, об. %</string>
+        <string name="fr_juice_volume">объём сока, л</string>
+        <string name="fr_add_sugar">добавить сахар, кг</string>
+        <string name="fr_add_water">добавить воду, л</string>
+        <string name="fr_volume_itog">всего браги, л</string>
 
 </resources>
