@@ -72,7 +72,7 @@
     <string name="menu_settings">Settings</string>
     <string name="cons_power_cube">Мощность нагревания куба</string>
     <string name="cons_teploss">Теплопотери системы, %%</string>
-    <string name="cons_waterflow">Расход воды, л/мин</string>
+    <string name="cons_waterflow">Расход воды, мл/мин</string>
     <string name="cons_water_t0">Начальная температура воды</string>
     <string name="cons_spirit_tout">Средняя температура самогона на выходе</string>
 
