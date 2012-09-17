@@ -27,8 +27,8 @@ public final class R {
         public static final int icon=0x7f020002;
     }
     public static final class id {
-        public static final int button1=0x7f090020;
-        public static final int button2=0x7f090024;
+        public static final int button1=0x7f090021;
+        public static final int button2=0x7f090025;
         public static final int density=0x7f09002d;
         public static final int dilution=0x7f090028;
         public static final int distillation=0x7f09002b;
@@ -36,14 +36,14 @@ public final class R {
         public static final int editText2=0x7f090006;
         public static final int editText3=0x7f090009;
         public static final int editText4=0x7f09000c;
-        public static final int linearLayout1=0x7f090022;
-        public static final int linearLayout2=0x7f090023;
-        public static final int listView1=0x7f09001f;
+        public static final int linearLayout1=0x7f090023;
+        public static final int linearLayout2=0x7f090024;
+        public static final int listView1=0x7f090020;
         public static final int menu_settings=0x7f090027;
         public static final int mixing=0x7f090029;
         public static final int spinner1=0x7f09000f;
         public static final int spinner2=0x7f090010;
-        public static final int spinnerTarget=0x7f090021;
+        public static final int spinnerTarget=0x7f090022;
         public static final int steam=0x7f09002a;
         public static final int t_adjust=0x7f09002c;
         public static final int tableLayout1=0x7f090000;
@@ -53,14 +53,14 @@ public final class R {
         public static final int tableRow2_1=0x7f09000e;
         public static final int tableRow2_2=0x7f090013;
         public static final int tableRow2_3=0x7f090016;
-        public static final int tableRow2_4=0x7f09001c;
-        public static final int tableRow2_5=0x7f09001d;
-        public static final int tableRow2_6=0x7f09001e;
+        public static final int tableRow2_4=0x7f09001d;
+        public static final int tableRow2_5=0x7f09001e;
+        public static final int tableRow2_6=0x7f09001f;
         public static final int tableRow3=0x7f090007;
         public static final int tableRow4=0x7f09000a;
         public static final int tableRow5=0x7f09001a;
         public static final int tableRow6=0x7f09001b;
-        public static final int textView0=0x7f090025;
+        public static final int textView0=0x7f090026;
         public static final int textView1=0x7f090019;
         public static final int textView10=0x7f090017;
         public static final int textView11=0x7f090018;
@@ -72,7 +72,7 @@ public final class R {
         public static final int textView7=0x7f090012;
         public static final int textView8=0x7f090014;
         public static final int textView9=0x7f090015;
-        public static final int webView1=0x7f090026;
+        public static final int webView1=0x7f09001c;
     }
     public static final class layout {
         public static final int condenser=0x7f030000;
@@ -112,7 +112,6 @@ public final class R {
         public static final int dil_v_aqua=0x7f04001b;
         public static final int dil_v_rezt=0x7f04001c;
         public static final int dil_v_spirit=0x7f04001a;
-        public static final int dilution_menu=0x7f040046;
         public static final int dist_begin_t=0x7f04002a;
         public static final int dist_braga=0x7f04002d;
         public static final int dist_end_t=0x7f04002b;

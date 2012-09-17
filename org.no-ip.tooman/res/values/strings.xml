@@ -137,6 +137,5 @@
     <string name="fr_add_sugar">добавить сахар, кг</string>
     <string name="fr_add_water">добавить воду, л</string>
     <string name="fr_volume_itog">всего браги, л</string>
-    <string name="dilution_menu">Используются простые пропорции, без учёта контракции.</string>
 
 </resources>
