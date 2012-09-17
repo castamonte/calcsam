@@ -1,8 +1,10 @@
 package org.dyndns.tooman;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
+import android.view.Menu;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -13,9 +15,8 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import android.view.KeyEvent;
 import android.view.inputmethod.EditorInfo;
 import android.widget.TextView;
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 
+// done
 public class Dilution extends Activity {
 	private EditText st0, stResult, vol;
 	private TextView vol0, volWater, volResult;
@@ -23,9 +24,8 @@ public class Dilution extends Activity {
 	private int i_vol0, i_volWater, i_volResult;
 
 	EditText.OnEditorActionListener etListener = new EditText.OnEditorActionListener() {
-//		@Override
+		// @Override
 		public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-			Log.i("IME", Integer.toString(actionId));
 			if (actionId == EditorInfo.IME_ACTION_DONE
 					|| actionId == EditorInfo.IME_ACTION_NEXT) {
 				recalc();
@@ -51,33 +51,84 @@ public class Dilution extends Activity {
 
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
 				this, R.array.liquid, R.layout.spinnerlayout);
-//		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
-//				this, R.array.liquid, android.R.layout.simple_list_item_1);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		Spinner spinner = (Spinner) findViewById(R.id.spinner1);
 		spinner.setAdapter(adapter);
 		spinner.setSelection(0);
 		spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
-//			@Override
+			// @Override
 			public void onItemSelected(AdapterView<?> parent, View view,
 					int position, long id) {
-				// Toast.makeText(getBaseContext(), "Position = " + position,
-				// 1000).show();
 				fw = position;
 				recalc();
 			}
 
-//			@Override
+			// @Override
 			public void onNothingSelected(AdapterView<?> arg0) {
 			}
 		});
 	}
 
 	private void recalc() {
-		// Toast.makeText(getBaseContext(), "recalc()", 1000).show();
-		i_vol = (int) Integer.parseInt(vol.getText().toString());
+		long id = 0;  
+// вводим исходную крепость
+		try {
+			i_st0 = (int) Integer.parseInt(st0.getText().toString());
+		} catch (NumberFormatException ex) {
+            Context context = getApplicationContext();  
+            CharSequence text = "что ж тут разводить-то?";  
+            int duration = Toast.LENGTH_LONG;  
+            Toast.makeText(context, text, duration).show();  
+			st0.setText("1");
+		}
 		i_st0 = (int) Integer.parseInt(st0.getText().toString());
+		st0.setText("" + (int) i_st0);
+// вводим желаемую крепость		
+		try {
+			i_stResult = (int) Integer.parseInt(stResult.getText().toString());
+		} catch (NumberFormatException ex) {
+            Context context = getApplicationContext();  
+            CharSequence text = "не, совсем спирт исчезнуть не может";  
+            int duration = Toast.LENGTH_LONG;  
+            Toast.makeText(context, text, duration).show();  
+            stResult.setText("1");
+		}
+		if (i_stResult==0){
+            Context context = getApplicationContext();  
+            CharSequence text = "не, совсем спирт исчезнуть не может";  
+            int duration = Toast.LENGTH_LONG;  
+            Toast.makeText(context, text, duration).show();  
+            stResult.setText("1");
+		}
 		i_stResult = (int) Integer.parseInt(stResult.getText().toString());
+		stResult.setText("" + (int) i_stResult);
+// вводим объём
+		try {
+			i_vol = (int) Integer.parseInt(vol.getText().toString());
+		} catch (NumberFormatException ex) {
+            Context context = getApplicationContext();  
+            CharSequence text = "даже у сферического коня в вакууме есть объём какой-нибудь";  
+            int duration = Toast.LENGTH_LONG;  
+            Toast.makeText(context, text, duration).show();  
+            vol.setText("1");
+		}
+		if (i_vol==0){
+            Context context = getApplicationContext();  
+            CharSequence text = "даже у сферического коня в вакууме есть объём какой-нибудь";  
+            int duration = Toast.LENGTH_LONG;  
+            Toast.makeText(context, text, duration).show();  
+            vol.setText("1");
+		}
+		i_vol = (int) Integer.parseInt(vol.getText().toString());
+		vol.setText("" + (int) i_vol);
+// проверка на разводимость
+		if (i_stResult > i_st0) {
+            Context context = getApplicationContext();  
+            CharSequence text = "это уже не разбавление, это дистилляция какая-то!";  
+            int duration = Toast.LENGTH_LONG;  
+            Toast.makeText(context, text, duration).show();  
+		}
+		
 		switch (fw) {
 		case 0:
 			// vol - объём самогона
@@ -104,6 +155,12 @@ public class Dilution extends Activity {
 		vol0.setText(String.valueOf(i_vol0));
 		volWater.setText(String.valueOf(i_volWater));
 		volResult.setText(String.valueOf(i_volResult));
+	}
+
+	public boolean onCreateOptionsMenu(Menu menu) {
+		Intent intent = new Intent(Dilution.this,Dilution_menu.class);
+		startActivityForResult(intent, 0);
+		return false;
 	}
 
 }

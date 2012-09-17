@@ -78,22 +78,24 @@ public final class R {
         public static final int condenser=0x7f030000;
         public static final int density=0x7f030001;
         public static final int dilution=0x7f030002;
-        public static final int distillation=0x7f030003;
-        public static final int fruit=0x7f030004;
-        public static final int hello=0x7f030005;
-        public static final int mixing=0x7f030006;
-        public static final int realheat=0x7f030007;
-        public static final int selection=0x7f030008;
-        public static final int spinnerlayout=0x7f030009;
-        public static final int steam=0x7f03000a;
-        public static final int t_adjust=0x7f03000b;
-        public static final int thanks=0x7f03000c;
+        public static final int dilution_menu=0x7f030003;
+        public static final int distillation=0x7f030004;
+        public static final int fruit=0x7f030005;
+        public static final int hello=0x7f030006;
+        public static final int mixing=0x7f030007;
+        public static final int realheat=0x7f030008;
+        public static final int selection=0x7f030009;
+        public static final int spinnerlayout=0x7f03000a;
+        public static final int steam=0x7f03000b;
+        public static final int t_adjust=0x7f03000c;
+        public static final int thanks=0x7f03000d;
     }
     public static final class menu {
         public static final int condenser=0x7f080000;
-        public static final int fruit=0x7f080001;
-        public static final int menu=0x7f080002;
-        public static final int thanks=0x7f080003;
+        public static final int dilution_menu=0x7f080001;
+        public static final int fruit=0x7f080002;
+        public static final int menu=0x7f080003;
+        public static final int thanks=0x7f080004;
     }
     public static final class string {
         public static final int app_name=0x7f040001;
@@ -110,6 +112,7 @@ public final class R {
         public static final int dil_v_aqua=0x7f04001b;
         public static final int dil_v_rezt=0x7f04001c;
         public static final int dil_v_spirit=0x7f04001a;
+        public static final int dilution_menu=0x7f040046;
         public static final int dist_begin_t=0x7f04002a;
         public static final int dist_braga=0x7f04002d;
         public static final int dist_end_t=0x7f04002b;
