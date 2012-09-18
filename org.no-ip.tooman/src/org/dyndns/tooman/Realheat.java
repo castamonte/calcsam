@@ -1,9 +1,11 @@
 package org.dyndns.tooman;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.Menu;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -87,6 +89,13 @@ public class Realheat extends Activity {
 //		Log.i("dv", Double.toString(dv));
 		i_realp = (int) (dv * dv * i_nomp);
 		realp.setText(String.valueOf(i_realp));
+	}
+
+	public boolean onCreateOptionsMenu(Menu menu) {
+		Intent intent = new Intent(Realheat.this,Help.class);
+		intent.putExtra("parentActivity", 3);
+		startActivityForResult(intent, 0);
+		return false;
 	}
 
 }

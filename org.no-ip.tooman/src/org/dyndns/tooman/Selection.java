@@ -4,13 +4,16 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.content.Intent;
 
 public class Selection extends Activity {
 	private EditText ml;
@@ -95,4 +98,12 @@ public class Selection extends Activity {
 		super.onDestroy();
 		timer.cancel();
 	}
+
+	public boolean onCreateOptionsMenu(Menu menu) {
+		Intent intent = new Intent(Selection.this,Help.class);
+		intent.putExtra("parentActivity", 2);
+		startActivityForResult(intent, 0);
+		return false;
+	}
+
 }

@@ -158,7 +158,8 @@ public class Dilution extends Activity {
 	}
 
 	public boolean onCreateOptionsMenu(Menu menu) {
-		Intent intent = new Intent(Dilution.this,Dilution_menu.class);
+		Intent intent = new Intent(Dilution.this,Help.class);
+		intent.putExtra("parentActivity", 0);
 		startActivityForResult(intent, 0);
 		return false;
 	}

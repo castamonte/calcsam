@@ -38,7 +38,7 @@ public final class R {
         public static final int editText4=0x7f09000c;
         public static final int linearLayout1=0x7f090023;
         public static final int linearLayout2=0x7f090024;
-        public static final int listView1=0x7f090020;
+        public static final int listView1=0x7f09001f;
         public static final int menu_settings=0x7f090027;
         public static final int mixing=0x7f090029;
         public static final int spinner1=0x7f09000f;
@@ -53,9 +53,9 @@ public final class R {
         public static final int tableRow2_1=0x7f09000e;
         public static final int tableRow2_2=0x7f090013;
         public static final int tableRow2_3=0x7f090016;
-        public static final int tableRow2_4=0x7f09001d;
-        public static final int tableRow2_5=0x7f09001e;
-        public static final int tableRow2_6=0x7f09001f;
+        public static final int tableRow2_4=0x7f09001c;
+        public static final int tableRow2_5=0x7f09001d;
+        public static final int tableRow2_6=0x7f09001e;
         public static final int tableRow3=0x7f090007;
         public static final int tableRow4=0x7f09000a;
         public static final int tableRow5=0x7f09001a;
@@ -72,16 +72,16 @@ public final class R {
         public static final int textView7=0x7f090012;
         public static final int textView8=0x7f090014;
         public static final int textView9=0x7f090015;
-        public static final int webView1=0x7f09001c;
+        public static final int webView1=0x7f090020;
     }
     public static final class layout {
         public static final int condenser=0x7f030000;
         public static final int density=0x7f030001;
         public static final int dilution=0x7f030002;
-        public static final int dilution_menu=0x7f030003;
-        public static final int distillation=0x7f030004;
-        public static final int fruit=0x7f030005;
-        public static final int hello=0x7f030006;
+        public static final int distillation=0x7f030003;
+        public static final int fruit=0x7f030004;
+        public static final int hello=0x7f030005;
+        public static final int help=0x7f030006;
         public static final int mixing=0x7f030007;
         public static final int realheat=0x7f030008;
         public static final int selection=0x7f030009;

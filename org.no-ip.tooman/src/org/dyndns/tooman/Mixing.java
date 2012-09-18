@@ -1,10 +1,12 @@
 package org.dyndns.tooman;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.Menu;
 import android.view.inputmethod.EditorInfo;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -105,6 +107,13 @@ public class Mixing extends Activity {
 		i_str = (int) (((i_st1 * i_v1) + (i_st2 * i_v2)) / i_vr);
 		str.setText(String.valueOf(i_str));
 
+	}
+
+	public boolean onCreateOptionsMenu(Menu menu) {
+		Intent intent = new Intent(Mixing.this,Help.class);
+		intent.putExtra("parentActivity", 1);
+		startActivityForResult(intent, 0);
+		return false;
 	}
 
 }

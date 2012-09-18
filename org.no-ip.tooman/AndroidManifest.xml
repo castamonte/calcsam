@@ -51,8 +51,8 @@
             android:label="@string/title_activity_fruit" >
         </activity>
         <activity
-            android:name=".Dilution_menu"
-            android:label="@string/title_activity_dilution" android:theme="@android:style/Theme.Dialog">
+            android:name=".Help"
+            android:theme="@android:style/Theme.Dialog">
         </activity>
     </application>
 
