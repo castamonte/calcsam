@@ -50,46 +50,49 @@ public class Realheat extends Activity {
 	}
 
 	private void recalc() {
+// вводим номинальное напряжение
 		try {
 			i_nomu = (int) Integer.parseInt(nomu.getText().toString());
-//			Log.i("nomu", nomu.getText().toString());
-			if (i_nomu < 0 || i_nomu > 380) {
-				Toast.makeText(
-						this,
-						"Номинальное напряжение должно быть в пределах 0..380 В",
-						Toast.LENGTH_SHORT).show();
-			}
 		} catch (NumberFormatException e) {
 			nomu.setText("220");
 			nomu.requestFocus();
 		}
+		if (i_nomu < 0 || i_nomu > 380) {
+			Toast.makeText(
+					this, "Удалось достать ТЭН на "+Integer.parseInt(nomu.getText().toString())+" вольт? Могу только поздравить :)",
+					Toast.LENGTH_SHORT).show();
+		}
+		i_nomu = (int) Integer.parseInt(nomu.getText().toString());
+
+// вводим мощность ТЭНа
 		try {
 			i_nomp = (int) Integer.parseInt(nomp.getText().toString());
-//			Log.i("nomp", nomp.getText().toString());
-			if (i_nomp < 0 || i_nomp > 9999) {
-				Toast.makeText(
-						this,
-						"Номинальная мощность должна быть в пределах 0..9999 Вт",
-						Toast.LENGTH_SHORT).show();
-			}
 		} catch (NumberFormatException e) {
 			nomp.setText("2000");
 			nomp.requestFocus();
 		}
+		if (i_nomp < 0 || i_nomp > 5000) {
+			Toast.makeText(
+					this, "ТЭН мощнее полудесятка киловатт? Уважаю..",
+					Toast.LENGTH_SHORT).show();
+		}
+		i_nomp = (int) Integer.parseInt(nomp.getText().toString());
+
+// вводим реальное напряжение		
 		try {
 			i_realu = (int) Integer.parseInt(realu.getText().toString());
-//			Log.i("realu", realu.getText().toString());
-			if (i_realu < 0 || i_realu > 380) {
-				Toast.makeText(this,
-						"Реальное напряжение должно быть в пределах 0..380 В",
-						Toast.LENGTH_SHORT).show();
-			}
 		} catch (NumberFormatException e) {
 			realu.setText("220");
 			realu.requestFocus();
 		}
+		if (i_realu < 0 || i_realu > 380) {
+			Toast.makeText(this,
+					"прямо-таки больше 380 В в розетке? :)",
+					Toast.LENGTH_SHORT).show();
+		}
+		i_realu = (int) Integer.parseInt(realu.getText().toString());
+		
 		double dv = 1.0 * i_realu / i_nomu;
-//		Log.i("dv", Double.toString(dv));
 		i_realp = (int) (dv * dv * i_nomp);
 		realp.setText(String.valueOf(i_realp));
 	}

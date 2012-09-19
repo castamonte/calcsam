@@ -81,11 +81,11 @@ public class Dilution extends Activity {
 		} catch (NumberFormatException ex) {
             Context context = getApplicationContext();  
             CharSequence text = "что ж тут разводить-то?";  
-            int duration = Toast.LENGTH_LONG;  
-            Toast.makeText(context, text, duration).show();  
+            Toast.makeText(context, text, Toast.LENGTH_LONG).show();  
 			st0.setText("1");
 		}
 		i_st0 = (int) Integer.parseInt(st0.getText().toString());
+// нужно ли это?
 		st0.setText("" + (int) i_st0);
 // вводим желаемую крепость		
 		try {
@@ -93,15 +93,13 @@ public class Dilution extends Activity {
 		} catch (NumberFormatException ex) {
             Context context = getApplicationContext();  
             CharSequence text = "не, совсем спирт исчезнуть не может";  
-            int duration = Toast.LENGTH_LONG;  
-            Toast.makeText(context, text, duration).show();  
+            Toast.makeText(context, text, Toast.LENGTH_LONG).show();  
             stResult.setText("1");
 		}
 		if (i_stResult==0){
             Context context = getApplicationContext();  
             CharSequence text = "не, совсем спирт исчезнуть не может";  
-            int duration = Toast.LENGTH_LONG;  
-            Toast.makeText(context, text, duration).show();  
+            Toast.makeText(context, text, Toast.LENGTH_LONG).show();  
             stResult.setText("1");
 		}
 		i_stResult = (int) Integer.parseInt(stResult.getText().toString());
@@ -112,15 +110,13 @@ public class Dilution extends Activity {
 		} catch (NumberFormatException ex) {
             Context context = getApplicationContext();  
             CharSequence text = "даже у сферического коня в вакууме есть объём какой-нибудь";  
-            int duration = Toast.LENGTH_LONG;  
-            Toast.makeText(context, text, duration).show();  
+            Toast.makeText(context, text, Toast.LENGTH_LONG).show();  
             vol.setText("1");
 		}
 		if (i_vol==0){
             Context context = getApplicationContext();  
             CharSequence text = "даже у сферического коня в вакууме есть объём какой-нибудь";  
-            int duration = Toast.LENGTH_LONG;  
-            Toast.makeText(context, text, duration).show();  
+            Toast.makeText(context, text, Toast.LENGTH_LONG).show();  
             vol.setText("1");
 		}
 		i_vol = (int) Integer.parseInt(vol.getText().toString());
@@ -129,8 +125,7 @@ public class Dilution extends Activity {
 		if (i_stResult > i_st0) {
             Context context = getApplicationContext();  
             CharSequence text = "это уже не разбавление, это дистилляция какая-то!";  
-            int duration = Toast.LENGTH_LONG;  
-            Toast.makeText(context, text, duration).show();  
+            Toast.makeText(context, text, Toast.LENGTH_LONG).show();  
 		}
 		
 		switch (fw) {

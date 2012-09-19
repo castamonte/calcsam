@@ -64,7 +64,7 @@
                 android:gravity="center_vertical|right"
                 android:imeOptions="actionDone"
                 android:inputType="number"
-                android:maxLength="3"
+                android:maxLength="4"
                 android:selectAllOnFocus="true"
                 android:text="200" >
 
@@ -126,7 +126,7 @@
                 android:gravity="center_vertical|right"
                 android:imeOptions="actionDone"
                 android:inputType="number"
-                android:maxLength="3"
+                android:maxLength="4"
                 android:selectAllOnFocus="true"
                 android:text="500" >
 
