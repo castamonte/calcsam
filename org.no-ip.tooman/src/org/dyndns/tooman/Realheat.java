@@ -19,10 +19,13 @@ public class Realheat extends Activity {
 	EditText.OnEditorActionListener etListener = new EditText.OnEditorActionListener() {
 //		@Override
 		public boolean onEditorAction(TextView v, int actionId,	KeyEvent event) {
-			Log.i("IME", Integer.toString(actionId));			
-			if (actionId == EditorInfo.IME_ACTION_DONE 
-					|| actionId == EditorInfo.IME_ACTION_NEXT) {
+			if (actionId == EditorInfo.IME_ACTION_DONE
+					|| actionId == EditorInfo.IME_ACTION_NEXT
+					|| actionId == EditorInfo.IME_NULL
+					|| event.getKeyCode() == KeyEvent.KEYCODE_ENTER
+					) {
 				recalc();
+				return true;
 			}
 			return false;
 		}

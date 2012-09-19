@@ -21,8 +21,12 @@ public class T_adjust extends Activity {
 		public boolean onEditorAction(TextView exampleView, int actionId,
 				KeyEvent event) {
 			if (actionId == EditorInfo.IME_ACTION_DONE
-					|| actionId == EditorInfo.IME_ACTION_NEXT) {
+					|| actionId == EditorInfo.IME_ACTION_NEXT
+					|| actionId == EditorInfo.IME_NULL
+					|| event.getKeyCode() == KeyEvent.KEYCODE_ENTER
+					) {
 				recalc();
+				return true;
 			}
 			return false;
 		}

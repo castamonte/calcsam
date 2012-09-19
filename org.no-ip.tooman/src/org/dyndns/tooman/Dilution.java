@@ -27,8 +27,12 @@ public class Dilution extends Activity {
 		// @Override
 		public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
 			if (actionId == EditorInfo.IME_ACTION_DONE
-					|| actionId == EditorInfo.IME_ACTION_NEXT) {
+					|| actionId == EditorInfo.IME_ACTION_NEXT
+					|| actionId == EditorInfo.IME_NULL
+					|| event.getKeyCode() == KeyEvent.KEYCODE_ENTER
+					) {
 				recalc();
+				return true;
 			}
 			return false;
 		}
