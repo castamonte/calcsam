@@ -87,6 +87,11 @@ public class Fruit extends Activity {
 				i_sugar_percent = getResources().getIntArray(R.array.fruit_sugar)[fruit_name.getSelectedItemPosition()];
 				sugar_percent.setText(String.valueOf(i_sugar_percent));
 			}
+			if (i_sugar_percent>50) {
+	            CharSequence text = "самый сладкий фрукт - это финик";  
+	            Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();  
+	            sugar_percent.setText("50");
+			}
 			i_sugar_percent = (int) Integer.parseInt(sugar_percent.getText().toString());
 		}
 
@@ -98,6 +103,11 @@ public class Fruit extends Activity {
             CharSequence text = "неужели компот будем делать?";  
             Toast.makeText(context, text, Toast.LENGTH_LONG).show();  
             wish_spirit.setText("1");
+		}
+		if (i_wish_spirit>16) {
+            CharSequence text = "таких злых дрожжей не бывает";  
+            Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();  
+            wish_spirit.setText("16");
 		}
 		i_wish_spirit = (int) Integer.parseInt(wish_spirit.getText().toString());
 
