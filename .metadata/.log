@@ -1,0 +1,398 @@
+!SESSION 2012-07-31 13:49:36.917 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/jnk/git/calcsam -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-07-31 14:24:39.342
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 4 10050 2012-07-31 14:24:39.342
+!MESSAGE Cannot complete the request.  See the error log for details.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2012-07-31 14:24:39.342
+!MESSAGE "Android DDMS" will be ignored because it is already installed.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2012-07-31 14:24:39.342
+!MESSAGE "Android Development Tools" will be ignored because it is already installed.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2012-07-31 14:24:39.342
+!MESSAGE "Android Hierarchy Viewer" will be ignored because it is already installed.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2012-07-31 14:24:39.342
+!MESSAGE "Android Traceview" will be ignored because it is already installed.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-07-31 14:24:39.345
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 4 10050 2012-07-31 14:24:39.345
+!MESSAGE Cannot complete the request.  See the error log for details.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2012-07-31 14:24:39.345
+!MESSAGE "Android DDMS" will be ignored because it is already installed.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2012-07-31 14:24:39.345
+!MESSAGE "Android Development Tools" will be ignored because it is already installed.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2012-07-31 14:24:39.345
+!MESSAGE "Android Hierarchy Viewer" will be ignored because it is already installed.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2012-07-31 14:24:39.345
+!MESSAGE "Android Traceview" will be ignored because it is already installed.
+!SESSION 2012-07-31 14:26:26.678 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/jnk/git/calcsam -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2012-07-31 14:28:08.003
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2012-07-31 14:28:08.003
+!MESSAGE session context was:(profile=PlatformProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.003
+!MESSAGE No repository found containing: osgi.bundle,com.android.ide.eclipse.adt,17.0.0.v201203161636-291853
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.android.ide.eclipse.adt,17.0.0.v201203161636-291853
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: osgi.bundle,com.android.ide.eclipse.ddms,17.0.0.v201203161636-291853
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.android.ide.eclipse.ddms,17.0.0.v201203161636-291853
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: osgi.bundle,com.android.ide.eclipse.hierarchyviewer,17.0.0.v201203161636-291853
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.android.ide.eclipse.hierarchyviewer,17.0.0.v201203161636-291853
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: osgi.bundle,com.android.ide.eclipse.traceview,17.0.0.v201203161636-291853
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.android.ide.eclipse.traceview,17.0.0.v201203161636-291853
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.ant.core.source,3.2.300.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.ant.launching,1.0.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.ant.launching.source,1.0.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.ant.ui,3.5.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.ant.ui.source,3.5.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.compare.source,3.5.200.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.core.jobs.source,3.5.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.core.resources.source,3.7.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.cvs.source,1.3.100.dist-7B78FHk9exZ_
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.debug.core.source,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.debug.ui.source,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.ds.source,1.3.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.p2.artifact.repository.source,1.1.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.equinox.p2.core.feature.source,1.0.0.dist-8291FXRFLhV8CJ871602A41
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.p2.core.source,2.1.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.p2.director.source,2.1.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.004
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.p2.engine.source,2.1.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.equinox.p2.extras.feature.source,1.0.0.dist-7A4FD3BpDPIGYSGMiW9DK982713B
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.p2.operations.source,2.1.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.equinox.p2.rcp.feature.source,1.0.0.dist-782EoAUkcWGYSGMiW9DK982713B5
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.p2.repository.source,2.1.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.p2.touchpoint.eclipse.source,2.1.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.p2.ui.source,2.1.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.equinox.p2.user.ui.source,2.1.1.dist-6-Bg8lt6MJp9sEf6-F3pFIpRdhQG
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.preferences.source,3.4.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.registry.source,3.5.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.security.source,1.1.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.help.base.source,3.6.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.help.source,1.3.0.dist-7i7uFFzF8kt89c7V7L9QGU1
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.help.ui.source,3.5.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.help.webapp.source,3.6.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jdt,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jdt.core,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jdt.debug,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jdt.debug.ui,3.6.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jdt.doc.user,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.jdt,3.7.0.dist-7z8gFchFFZOlyA8Br73543A7B15B
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jdt.launching,3.6.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.jdt.source,3.7.0.dist-7z8gFchFFZOlyA8Br73543A7B15B
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jdt.ui,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.005
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jface.text.source,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.ltk.core.refactoring.source,3.5.200.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.osgi.source,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde,3.6.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde.api.tools,1.0.300.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde.api.tools.source,1.0.300.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde.api.tools.ui,1.0.300.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde.api.tools.ui.source,1.0.300.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde.core,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde.core.source,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde.doc.user,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.pde,3.7.0.dist-7b7qFVqF9fnFH
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde.runtime,3.4.200.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde.runtime.source,3.4.200.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde.source,3.6.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.pde.source,3.7.0.dist-7b7qFVqF9fnFH
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.platform.doc.isv,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.platform.source,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.platform.source,3.7.0.dist-9pF7UHbtFs8vdhkukhQodUHz-siCnGGYotSeiRH
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.rcp.source,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.rcp.source,3.7.0.dist-9gBsFnkFlfr2B21319
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.sdk,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.sdk,3.7.0.dist-7Q7xA7BmnD6epIkKRuez-5xVVJERfqkpayuywWDPFhkyI
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.team.cvs.ui.source,3.3.400.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.006
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.team.ui.source,3.6.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.007
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.text.source,3.5.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.007
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.ui.browser.source,3.3.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.007
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.ui.forms.source,3.5.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.007
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.ui.navigator.source,3.5.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.007
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.ui.workbench.source,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:28:08.007
+!MESSAGE No repository found containing: osgi.bundle,overlay.com.android.ide.eclipse.adt.overlay,17.0.0.v201203161636-291853
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-07-31 14:29:32.507
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 4 10050 2012-07-31 14:29:32.507
+!MESSAGE Cannot complete the request.  See the error log for details.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2012-07-31 14:29:32.507
+!MESSAGE "Android DDMS" will be ignored because it is already installed.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2012-07-31 14:29:32.512
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 4 10050 2012-07-31 14:29:32.512
+!MESSAGE Cannot complete the request.  See the error log for details.
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10005 2012-07-31 14:29:32.512
+!MESSAGE "Android DDMS" will be ignored because it is already installed.
+!SESSION 2012-07-31 14:42:16.896 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/jnk/git/calcsam -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2012-07-31 14:48:39.804
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2012-07-31 14:48:39.804
+!MESSAGE session context was:(profile=PlatformProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.804
+!MESSAGE No repository found containing: osgi.bundle,com.android.ide.eclipse.adt,17.0.0.v201203161636-291853
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.804
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.android.ide.eclipse.adt,17.0.0.v201203161636-291853
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.804
+!MESSAGE No repository found containing: osgi.bundle,com.android.ide.eclipse.ddms,17.0.0.v201203161636-291853
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.804
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.android.ide.eclipse.ddms,17.0.0.v201203161636-291853
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.804
+!MESSAGE No repository found containing: osgi.bundle,com.android.ide.eclipse.hierarchyviewer,17.0.0.v201203161636-291853
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.android.ide.eclipse.hierarchyviewer,17.0.0.v201203161636-291853
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: osgi.bundle,com.android.ide.eclipse.traceview,17.0.0.v201203161636-291853
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: org.eclipse.update.feature,com.android.ide.eclipse.traceview,17.0.0.v201203161636-291853
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.ant.core.source,3.2.300.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.ant.launching,1.0.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.ant.launching.source,1.0.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.ant.ui,3.5.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.ant.ui.source,3.5.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.compare.source,3.5.200.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.core.jobs.source,3.5.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.core.resources.source,3.7.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.cvs.source,1.3.100.dist-7B78FHk9exZ_
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.debug.core.source,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.debug.ui.source,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.ds.source,1.3.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.p2.artifact.repository.source,1.1.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.equinox.p2.core.feature.source,1.0.0.dist-8291FXRFLhV8CJ871602A41
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.p2.core.source,2.1.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.p2.director.source,2.1.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.p2.engine.source,2.1.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.equinox.p2.extras.feature.source,1.0.0.dist-7A4FD3BpDPIGYSGMiW9DK982713B
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.p2.operations.source,2.1.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.equinox.p2.rcp.feature.source,1.0.0.dist-782EoAUkcWGYSGMiW9DK982713B5
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.805
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.p2.repository.source,2.1.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.p2.touchpoint.eclipse.source,2.1.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.p2.ui.source,2.1.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.equinox.p2.user.ui.source,2.1.1.dist-6-Bg8lt6MJp9sEf6-F3pFIpRdhQG
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.preferences.source,3.4.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.registry.source,3.5.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.equinox.security.source,1.1.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.help.base.source,3.6.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.help.source,1.3.0.dist-7i7uFFzF8kt89c7V7L9QGU1
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.help.ui.source,3.5.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.help.webapp.source,3.6.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jdt,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jdt.core,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jdt.debug,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jdt.debug.ui,3.6.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jdt.doc.user,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.jdt,3.7.0.dist-7z8gFchFFZOlyA8Br73543A7B15B
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jdt.launching,3.6.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.jdt.source,3.7.0.dist-7z8gFchFFZOlyA8Br73543A7B15B
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jdt.ui,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.jface.text.source,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.ltk.core.refactoring.source,3.5.200.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.osgi.source,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.806
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde,3.6.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde.api.tools,1.0.300.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde.api.tools.source,1.0.300.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde.api.tools.ui,1.0.300.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde.api.tools.ui.source,1.0.300.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde.core,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde.core.source,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde.doc.user,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.pde,3.7.0.dist-7b7qFVqF9fnFH
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde.runtime,3.4.200.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde.runtime.source,3.4.200.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.pde.source,3.6.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.pde.source,3.7.0.dist-7b7qFVqF9fnFH
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.platform.doc.isv,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.platform.source,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.platform.source,3.7.0.dist-9pF7UHbtFs8vdhkukhQodUHz-siCnGGYotSeiRH
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.rcp.source,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.rcp.source,3.7.0.dist-9gBsFnkFlfr2B21319
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.sdk,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.sdk,3.7.0.dist-7Q7xA7BmnD6epIkKRuez-5xVVJERfqkpayuywWDPFhkyI
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.team.cvs.ui.source,3.3.400.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.team.ui.source,3.6.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.text.source,3.5.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.ui.browser.source,3.3.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.807
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.ui.forms.source,3.5.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.808
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.ui.navigator.source,3.5.100.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.808
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.ui.workbench.source,3.7.0.dist
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2012-07-31 14:48:39.808
+!MESSAGE No repository found containing: osgi.bundle,overlay.com.android.ide.eclipse.adt.overlay,17.0.0.v201203161636-291853
+
+!ENTRY org.eclipse.equinox.p2.operations 2 0 2012-07-31 14:50:21.521
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2012-07-31 14:50:21.521
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10005 2012-07-31 14:50:21.521
+!MESSAGE "Android Development Tools" will be ignored because it is already installed.
+
+!ENTRY org.eclipse.equinox.p2.operations 2 0 2012-07-31 14:50:21.524
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2012-07-31 14:50:21.524
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10005 2012-07-31 14:50:21.524
+!MESSAGE "Android Development Tools" will be ignored because it is already installed.

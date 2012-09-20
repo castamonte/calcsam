@@ -77,7 +77,7 @@ public class Mixing extends Activity {
 						Toast.LENGTH_SHORT).show();
 			}
 		} catch (NumberFormatException e) {
-			v1.setText("40");
+			v1.setText("1000");
 			v1.requestFocus();
 		}
 
@@ -101,7 +101,7 @@ public class Mixing extends Activity {
 						Toast.LENGTH_SHORT).show();
 			}
 		} catch (NumberFormatException e) {
-			st1.setText("40");
+			st1.setText("1000");
 			v2.requestFocus();
 		}
 

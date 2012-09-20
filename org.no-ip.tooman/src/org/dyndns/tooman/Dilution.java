@@ -21,7 +21,7 @@ public class Dilution extends Activity {
 	private EditText st0, stResult, vol;
 	private TextView vol0, volWater, volResult;
 	private int fw, i_st0, i_stResult, i_vol;
-	private int i_vol0, i_volWater, i_volResult;
+	private double d_vol0, d_volWater, d_volResult;
 
 	EditText.OnEditorActionListener etListener = new EditText.OnEditorActionListener() {
 		// @Override
@@ -131,29 +131,36 @@ public class Dilution extends Activity {
 		switch (fw) {
 		case 0:
 			// vol - объём самогона
-			i_vol0 = i_vol;
-			int spiritInSam = i_vol * i_st0;
-			i_volResult = spiritInSam / i_stResult;
-			i_volWater = i_volResult - i_vol;
+			d_vol0 = i_vol;
+			double spiritInSam = i_vol * i_st0;
+			d_volResult = spiritInSam / i_stResult;
+			d_volWater = d_volResult - i_vol;
 			break;
 		case 1:
 			// vol - объём воды
-			i_volWater = i_vol;
+			d_volWater = i_vol;
 			double propSprt = (double) i_st0 / i_stResult - 1;
-			i_vol0 = (int) (i_vol / propSprt);
-			i_volResult = i_vol0 + i_volWater;
+			d_vol0 = i_vol / propSprt;
+			d_volResult = d_vol0 + d_volWater;
 			break;
 		case 2:
 			// vol - объём результата
-			i_volResult = i_vol;
-			int spiritInRez = i_vol * i_stResult;
-			i_vol0 = spiritInRez / i_st0;
-			i_volWater = i_vol - i_vol0;
+			d_volResult = i_vol;
+			double spiritInRez = i_vol * i_stResult;
+			d_vol0 = spiritInRez / i_st0;
+			d_volWater = i_vol - d_vol0;
 			break;
 		}
-		vol0.setText(String.valueOf(i_vol0));
-		volWater.setText(String.valueOf(i_volWater));
-		volResult.setText(String.valueOf(i_volResult));
+
+		if (d_vol0>99) vol0.setText(String.format("%.0f", d_vol0));
+		else vol0.setText(String.format("%.1f", d_vol0));
+		
+		if (d_volWater>99) volWater.setText(String.format("%.0f", d_volWater));
+		else volWater.setText(String.format("%.1f", d_volWater));
+
+		if (d_volResult>99) volResult.setText(String.format("%.0f", d_volResult));
+		else volResult.setText(String.format("%.1f", d_volResult));
+
 	}
 
 	public boolean onCreateOptionsMenu(Menu menu) {
