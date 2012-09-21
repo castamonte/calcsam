@@ -8,9 +8,10 @@
         <item>Разведение спирта</item>
         <item>Смешивание</item>
         <item>Скорость отбора</item>
-        <item>Реальная мощность нагрева</item>
-        <item>Расчёт холодильника</item>
-        <item>Расчёт фруктовой бражки</item>
+        <item>Реальная мощность ТЭНа</item>
+        <item>Прямоточный холодильник</item>
+        <item>Фруктовая брага</item>
+        <item >Тепловые потери</item>
     </string-array>
 
     <color name="myColor">#088</color>
@@ -137,5 +138,12 @@
     <string name="fr_add_sugar">добавить сахар, кг</string>
     <string name="fr_add_water">добавить воду, л</string>
     <string name="fr_volume_itog">всего браги, л</string>
+    <string name="title_activity_wastage">Теплопотери</string>
+    <string name="wast_vol">Объём воды, л</string>
+    <string name="wast_t0">Начальная температура, °C</string>
+    <string name="wast_t1">Конечная температура, °C</string>
+    <string name="wast_power">Мощность ТЭНа, Вт</string>
+    <string name="wast_time">Время нагревания, с</string>
+    <string name="wast_waste">Тепловые потери, %%</string>
 
 </resources>

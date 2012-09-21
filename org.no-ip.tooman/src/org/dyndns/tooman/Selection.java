@@ -46,6 +46,7 @@ public class Selection extends Activity {
 				if (tiktak) {
 					knopka.setText(getString(R.string.s_btnStart));
 					tiktak = false;
+					ml.setEnabled(true);
 					ts.setText(seconds_i);
 					t.setText("0.0");
 					i_ml = (int) Integer.parseInt(ml.getText().toString());
@@ -57,6 +58,7 @@ public class Selection extends Activity {
 				} else {
 					knopka.setText(getString(R.string.s_btnStop));
 					tiktak = true;
+					ml.setEnabled(false);
 				};
 				deciseconds = 0;
 			}

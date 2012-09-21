@@ -29,9 +29,10 @@ public final class R {
     public static final class id {
         public static final int button1=0x7f090021;
         public static final int button2=0x7f090025;
-        public static final int density=0x7f09002d;
-        public static final int dilution=0x7f090028;
-        public static final int distillation=0x7f09002b;
+        public static final int density=0x7f09002f;
+        public static final int dilution=0x7f09002a;
+        public static final int distillation=0x7f09002d;
+        public static final int editText0=0x7f090028;
         public static final int editText1=0x7f090003;
         public static final int editText2=0x7f090006;
         public static final int editText3=0x7f090009;
@@ -39,15 +40,16 @@ public final class R {
         public static final int linearLayout1=0x7f090023;
         public static final int linearLayout2=0x7f090024;
         public static final int listView1=0x7f09001f;
-        public static final int menu_settings=0x7f090027;
-        public static final int mixing=0x7f090029;
+        public static final int menu_settings=0x7f090029;
+        public static final int mixing=0x7f09002b;
         public static final int spinner1=0x7f09000f;
         public static final int spinner2=0x7f090010;
         public static final int spinnerTarget=0x7f090022;
-        public static final int steam=0x7f09002a;
-        public static final int t_adjust=0x7f09002c;
+        public static final int steam=0x7f09002c;
+        public static final int t_adjust=0x7f09002e;
         public static final int tableLayout1=0x7f090000;
         public static final int tableLayout2=0x7f09000d;
+        public static final int tableRow0=0x7f090027;
         public static final int tableRow1=0x7f090001;
         public static final int tableRow2=0x7f090004;
         public static final int tableRow2_1=0x7f09000e;
@@ -89,6 +91,7 @@ public final class R {
         public static final int steam=0x7f03000b;
         public static final int t_adjust=0x7f03000c;
         public static final int thanks=0x7f03000d;
+        public static final int wastage=0x7f03000e;
     }
     public static final class menu {
         public static final int condenser=0x7f080000;
@@ -96,6 +99,7 @@ public final class R {
         public static final int fruit=0x7f080002;
         public static final int menu=0x7f080003;
         public static final int thanks=0x7f080004;
+        public static final int wastage=0x7f080005;
     }
     public static final class string {
         public static final int app_name=0x7f040001;
@@ -167,7 +171,14 @@ public final class R {
         public static final int title_activity_realheat=0x7f04003b;
         public static final int title_activity_selection=0x7f04003c;
         public static final int title_activity_thanks=0x7f040038;
+        public static final int title_activity_wastage=0x7f040046;
         public static final int volume=0x7f040007;
+        public static final int wast_power=0x7f04004a;
+        public static final int wast_t0=0x7f040048;
+        public static final int wast_t1=0x7f040049;
+        public static final int wast_time=0x7f04004b;
+        public static final int wast_vol=0x7f040047;
+        public static final int wast_waste=0x7f04004c;
     }
     public static final class style {
         public static final int PageHeader=0x7f070000;
