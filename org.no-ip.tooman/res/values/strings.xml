@@ -145,5 +145,9 @@
     <string name="wast_power">Мощность ТЭНа, Вт</string>
     <string name="wast_time">Время нагревания, с</string>
     <string name="wast_waste">Тепловые потери, %%</string>
+    <string-array name="menu_items">
+        <item >благодарности</item>
+        <item >об этиловом спирте</item>
+    </string-array>
 
 </resources>

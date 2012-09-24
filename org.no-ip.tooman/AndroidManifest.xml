@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.dyndns.tooman"
     android:versionCode="1"
-    android:versionName="120921" >
+    android:versionName="120924" >
 
     <uses-sdk android:minSdkVersion="4" />
 
@@ -57,11 +57,6 @@
         <activity
             android:name=".Wastage"
             android:label="@string/title_activity_wastage" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
