@@ -12,6 +12,7 @@
         <item>Прямоточный холодильник</item>
         <item>Фруктовая брага</item>
         <item >Тепловые потери</item>
+        <item >Спиртовой пар</item>
     </string-array>
 
     <color name="myColor">#088</color>
@@ -91,7 +92,6 @@
 
     <string name="cons_smgflow">Средняя производительность по самогону, л/час</string>
     <string name="title_activity_condenser">Расчёт прямоточного холодильника</string>
-    <string name="title_activity_thanks">Спасибо, люди!!</string>
     <string name="title_activity_dilution">Разведение спирта</string>
     <string name="title_activity_distillation">Перегонка браги</string>
     <string name="title_activity_realheat">Расчёт мощности ТЭНа</string>
@@ -149,5 +149,16 @@
         <item >благодарности</item>
         <item >об этиловом спирте</item>
     </string-array>
+        <string name="steam_tk">Температура в кубе, °C</string>
+        <string name="title_activity_steam">Спиртовой пар</string>
+        <string name="steam_vol_percent">Объёмная доля спирта, %%</string>
+        <string name="steam_mass_percent">Весовая доля спирта, %%</string>
+        <string name="steam_massa">Масса пара, кг/ч</string>
+        <string name="steam_massa_gr">,  г/с</string>
+        <string name="steam_volume">Объём конденсата, л/ч</string>
+        <string name="steam_volume_ml">, мл/с</string>
+        <string name="steam_otbor">Отбор, л/ч</string>
+        <string name="steam_fc">  ФЧ</string>
+        <string name="steam_power">Мощность ТЭНа, Вт</string>
 
 </resources>

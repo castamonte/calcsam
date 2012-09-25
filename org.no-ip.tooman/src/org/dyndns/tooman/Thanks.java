@@ -11,8 +11,8 @@ import android.widget.AdapterView;
 
 // done
 public class Thanks extends Activity {
-	private WebView webView;
 	private Spinner razdel;
+	private WebView webView;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -38,7 +38,6 @@ public class Thanks extends Activity {
 			public void onNothingSelected(AdapterView<?> arg0) {
 			}
 		});
-//		webView.loadUrl("file:///android_asset/thanks.html");
 	}
 
 	@Override

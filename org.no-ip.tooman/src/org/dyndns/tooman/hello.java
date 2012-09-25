@@ -42,6 +42,7 @@ public class hello extends Activity {
 				if (position == 4) {myIntent = new Intent(view.getContext(), Condenser.class);}
 				if (position == 5) {myIntent = new Intent(view.getContext(), Fruit.class);}
 				if (position == 6) {myIntent = new Intent(view.getContext(), Wastage.class);}
+				if (position == 7) {myIntent = new Intent(view.getContext(), Steam.class);}
 
 				startActivity(myIntent);
 

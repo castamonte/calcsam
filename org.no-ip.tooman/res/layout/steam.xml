@@ -1,18 +1,295 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="fill_parent"
-  android:layout_height="fill_parent" android:orientation="vertical">
-    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView1" android:textSize="24px" android:layout_gravity="center_horizontal" android:text="@string/steam"></TextView>
-    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:baselineAligned="false">
-        <TextView android:layout_height="wrap_content" android:id="@+id/textView4" android:text="@string/spirit_pro" android:layout_width="wrap_content"></TextView>
-        <EditText android:layout_height="wrap_content" android:id="@+id/editText1" android:layout_width="wrap_content" android:text="96" android:numeric="decimal"></EditText>
-        <Button android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/button1" android:text="&gt;" android:layout_width="wrap_content"></Button>
-    </LinearLayout>
-    <LinearLayout android:id="@+id/linearLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
-        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView2" android:text="@string/boil"></TextView>
-        <EditText android:layout_height="wrap_content" android:id="@+id/editText2" android:layout_width="wrap_content" android:text="78.2" android:numeric="integer"></EditText>
-        <Button android:layout_height="wrap_content" android:id="@+id/button2" android:text="&gt;" android:layout_width="wrap_content"></Button>
-    </LinearLayout>
-    <TextView android:text="TextView" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/steam_tk"
+                android:textSize="14dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="3"
+                android:selectAllOnFocus="true"
+                android:text="88" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/steam_vol_percent"
+                android:textSize="14dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:gravity="right"
+                android:text="20.8"
+                android:textColor="@color/myColor"
+                android:textSize="24dp"
+                android:textStyle="bold" >
+            </TextView>
+ 
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/steam_mass_percent"
+                android:textSize="14dp" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:gravity="right"
+                android:text="17.0"
+                android:textColor="@color/myColor"
+                android:textSize="24dp"
+                android:textStyle="bold" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/steam_massa"
+                android:textSize="14dp" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:gravity="right"
+                android:text="2.68"
+                android:textColor="@color/myColor"
+                android:textSize="24dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/steam_massa_gr"
+                android:textSize="14dp" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:gravity="right"
+                android:text="0.74"
+                android:textColor="@color/myColor"
+                android:textSize="24dp"
+                android:textStyle="bold" >
+            </TextView>
+            
+            </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/steam_volume"
+                android:textSize="14dp" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:gravity="right"
+                android:text="2.83"
+                android:textColor="@color/myColor"
+                android:textSize="24dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/steam_volume_ml"
+                android:textSize="14dp" >
+            </TextView>
+            
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:gravity="right"
+                android:text="0.79"
+                android:textColor="@color/myColor"
+                android:textSize="24dp"
+                android:textStyle="bold" >
+            </TextView>
+            
+            </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/steam_power"
+                android:textSize="14dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="4"
+                android:selectAllOnFocus="true"
+                android:text="1500" >
+            </EditText>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/steam_otbor"
+                android:textSize="14dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
+                android:minEms="3"
+                android:selectAllOnFocus="true"
+                android:text="2.83" >
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="@string/steam_fc"
+                android:textSize="14dp" >
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:inputType="numberDecimal"
+                android:maxLength="2"
+                android:minEms="2"
+                android:selectAllOnFocus="true"
+                android:text="0" >
+
+            </EditText>
+            
+            </TableRow>
+        </TableLayout>
+
 </LinearLayout>

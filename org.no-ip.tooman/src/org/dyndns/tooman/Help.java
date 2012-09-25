@@ -43,6 +43,10 @@ public class Help extends Activity {
 			setTitle(R.string.title_activity_wastage);
 			webView.loadUrl("file:///android_asset/help/wastage.html");
 			break;
+		case 7:
+			setTitle(R.string.title_activity_steam);
+			webView.loadUrl("file:///android_asset/help/steam.html");
+			break;
 		}
     }
 
