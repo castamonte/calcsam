@@ -99,7 +99,7 @@ public class Realheat extends Activity {
 
 	public boolean onCreateOptionsMenu(Menu menu) {
 		Intent intent = new Intent(Realheat.this,Help.class);
-		intent.putExtra("parentActivity", 3);
+		intent.putExtra("parentActivity", 1);
 		startActivityForResult(intent, 0);
 		return false;
 	}

@@ -114,7 +114,7 @@ public class Mixing extends Activity {
 
 	public boolean onCreateOptionsMenu(Menu menu) {
 		Intent intent = new Intent(Mixing.this,Help.class);
-		intent.putExtra("parentActivity", 1);
+		intent.putExtra("parentActivity", 5);
 		startActivityForResult(intent, 0);
 		return false;
 	}

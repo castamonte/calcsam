@@ -207,7 +207,7 @@ public class Wastage extends Activity {
 
 	public boolean onCreateOptionsMenu(Menu menu) {
 		Intent intent = new Intent(Wastage.this, Help.class);
-		intent.putExtra("parentActivity", 6);
+		intent.putExtra("parentActivity", 7);
 		startActivityForResult(intent, 0);
 		return false;
 	}

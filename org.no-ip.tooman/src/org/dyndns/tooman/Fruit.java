@@ -144,7 +144,7 @@ public class Fruit extends Activity {
 
 	public boolean onCreateOptionsMenu(Menu menu) {
 		Intent intent = new Intent(Fruit.this,Help.class);
-		intent.putExtra("parentActivity", 5);
+		intent.putExtra("parentActivity", 0);
 		startActivityForResult(intent, 0);
 		return false;
 	}

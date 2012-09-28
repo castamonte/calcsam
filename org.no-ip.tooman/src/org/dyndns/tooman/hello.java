@@ -3,21 +3,17 @@ package org.dyndns.tooman;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-//import android.util.Log;
 import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
+//import android.view.MenuInflater;
+//import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 //import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class hello extends Activity {
-
-	final String LOG_TAG = "myLogs";
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -32,17 +28,16 @@ public class hello extends Activity {
 		myListView.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-//				Log.d(LOG_TAG, "itemClick: position = " + position + ", id = "	+ id);
 				Intent myIntent = null;
 
-				if (position == 0) {myIntent = new Intent(view.getContext(), Dilution.class);}
-				if (position == 1) {myIntent = new Intent(view.getContext(), Mixing.class);}
+				if (position == 0) {myIntent = new Intent(view.getContext(), Fruit.class);}
+				if (position == 1) {myIntent = new Intent(view.getContext(), Realheat.class);}
 				if (position == 2) {myIntent = new Intent(view.getContext(), Selection.class);}
-				if (position == 3) {myIntent = new Intent(view.getContext(), Realheat.class);}
-				if (position == 4) {myIntent = new Intent(view.getContext(), Condenser.class);}
-				if (position == 5) {myIntent = new Intent(view.getContext(), Fruit.class);}
-				if (position == 6) {myIntent = new Intent(view.getContext(), Wastage.class);}
-				if (position == 7) {myIntent = new Intent(view.getContext(), Steam.class);}
+				if (position == 3) {myIntent = new Intent(view.getContext(), Steam.class);}
+				if (position == 4) {myIntent = new Intent(view.getContext(), Dilution.class);}
+				if (position == 5) {myIntent = new Intent(view.getContext(), Mixing.class);}
+				if (position == 6) {myIntent = new Intent(view.getContext(), Condenser.class);}
+				if (position == 7) {myIntent = new Intent(view.getContext(), Wastage.class);}
 
 				startActivity(myIntent);
 

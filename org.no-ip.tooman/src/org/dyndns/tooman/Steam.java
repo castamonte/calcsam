@@ -1,22 +1,24 @@
 package org.dyndns.tooman;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
+import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 public class Steam extends Activity {
-	private EditText temp, power, sel, fn;
-	private TextView vol_sh, mass_sh, m_kgh, m_gs, v_lh, v_mls;
+	private EditText temp, power, f_s_value;
+	private TextView vol_sh, mass_sh, m_kgh, m_gs, v_lh, v_mls, s_f_title, s_f_value;
+	private ToggleButton toggle; 
 	private int i_temp, i_power;
-	private double d_sel, d_fn, d_vol_sh, d_mass_sh, d_m_kgh, d_m_gs, d_v_lh, d_v_mls;
+	private double d_f_s_value, d_s_f_value, d_vol_sh, d_mass_sh, d_m_kgh, d_m_gs, d_v_lh, d_v_mls;
 
 	EditText.OnEditorActionListener etListener = new EditText.OnEditorActionListener() {
 		// @Override
@@ -25,7 +27,7 @@ public class Steam extends Activity {
 					|| actionId == EditorInfo.IME_ACTION_NEXT
 					|| actionId == EditorInfo.IME_NULL
 					|| event.getKeyCode() == KeyEvent.KEYCODE_ENTER) {
-				recalc(v);
+				recalc();
 				return true;
 			}
 			return false;
@@ -40,27 +42,22 @@ public class Steam extends Activity {
 		temp.setOnEditorActionListener(etListener);
 		power = (EditText) findViewById(R.id.editText2);
 		power.setOnEditorActionListener(etListener);
-		sel = (EditText) findViewById(R.id.editText3);
-		sel.setOnEditorActionListener(etListener);
-		fn = (EditText) findViewById(R.id.editText4);
-		fn.setOnEditorActionListener(etListener);
+		f_s_value = (EditText) findViewById(R.id.editText3);
+		f_s_value.setOnEditorActionListener(etListener);
+		toggle = (ToggleButton) findViewById(R.id.toggleButton1);
 		vol_sh = (TextView) findViewById(R.id.textView3);
 		mass_sh = (TextView) findViewById(R.id.textView5);
 		m_kgh = (TextView) findViewById(R.id.textView8);
 		m_gs = (TextView) findViewById(R.id.textView10);
 		v_lh = (TextView) findViewById(R.id.textView12);
 		v_mls = (TextView) findViewById(R.id.textView14);
+		s_f_title = (TextView) findViewById(R.id.textView15);
+		s_f_value = (TextView) findViewById(R.id.textView16);
 		d_m_kgh = 3.77;
 	}
 
-	protected void recalc(TextView v) {
+	protected void recalc() {
 		if (test()) {
-/*
-			i_temp = (int) Integer.parseInt(temp.getText().toString());
-			i_power = (int) Integer.parseInt(power.getText().toString());
-			d_sel = Float.parseFloat(sel.getText().toString());
-			d_fn = Float.parseFloat(fn.getText().toString());
-*/
 			d_vol_sh = temp_to_volp(i_temp);
 			d_mass_sh = volp_to_masp(d_vol_sh);
 			d_m_kgh = 3.6 * i_power
@@ -70,34 +67,38 @@ public class Steam extends Activity {
 					* (100 - d_vol_sh));
 			d_v_mls = d_v_lh / 3.6;
 
-			if (v.getId() == sel.getId()) {
-				d_fn = (d_v_lh - d_sel) / d_sel;
-			} else if (v.getId() == fn.getId()) {
-				d_sel = d_v_lh / (1 + d_fn);
+			if (toggle.isChecked()) {
+			// задан отбор, считаем ФЧ
+				if (d_f_s_value != 0) {
+					d_s_f_value = (d_v_lh - d_f_s_value) / d_f_s_value;
+					s_f_value.setText(String.format("%.2f", d_s_f_value));
+				} else {
+					s_f_value.setText("∞");
+				}
 			} else {
-				d_sel = d_v_lh;
-				d_fn = 0;
+			// задано ФЧ, считаем отбор
+				d_s_f_value = d_v_lh / (1 + d_f_s_value);
+				s_f_value.setText(String.format("%.2f", d_s_f_value));
 			}
-
-			vol_sh.setText(String.format("%.1f", d_vol_sh));
-			mass_sh.setText(String.format("%.1f", d_mass_sh));
-			m_kgh.setText(String.format("%.2f", d_m_kgh));
-			m_gs.setText(String.format("%.2f", d_m_gs));
-			v_lh.setText(String.format("%.2f", d_v_lh));
-			v_mls.setText(String.format("%.2f", d_v_mls));
-			sel.setText(String.format("%.2f", d_sel));
-			fn.setText(String.format("%.1f", d_fn));
 		}
+
+		vol_sh.setText(String.format("%.1f", d_vol_sh));
+		mass_sh.setText(String.format("%.1f", d_mass_sh));
+		m_kgh.setText(String.format("%.2f", d_m_kgh));
+		m_gs.setText(String.format("%.2f", d_m_gs));
+		v_lh.setText(String.format("%.2f", d_v_lh));
+		v_mls.setText(String.format("%.2f", d_v_mls));
 	}
 
 	public boolean onCreateOptionsMenu(Menu menu) {
 		Intent intent = new Intent(Steam.this, Help.class);
-		intent.putExtra("parentActivity", 7);
+		intent.putExtra("parentActivity", 3);
 		startActivityForResult(intent, 0);
 		return false;
 	}
 
 	public boolean test() {
+		// нормализуем вводимые значения и проверяем количество отбора
 		boolean flag;
 		flag = true;
 		// вводим температуру кипения
@@ -107,19 +108,11 @@ public class Steam extends Activity {
 			CharSequence text = "а температура в кубе какая?";
 			Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
 			temp.setText("88");
-			flag = false;
-		}
-		if (i_temp > 100) {
-			CharSequence text = "температура в кубе выше 100°C ?";
-			Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
-			temp.setText("88");
-			flag = false;
 		}
 		if (i_temp < 79) {
-			CharSequence text = "или термометр неисправен, или ацетон  в кубе..";
+			CharSequence text = "предполагаем, что давление нормальное и термометр не врёт..";
 			Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
-			temp.setText("88");
-			flag = false;
+			temp.setText("79");
 		}
 		i_temp = (int) Integer.parseInt(temp.getText().toString());
 
@@ -127,50 +120,27 @@ public class Steam extends Activity {
 		try {
 			i_power = (int) Integer.parseInt(power.getText().toString());
 		} catch (NumberFormatException ex) {
-			CharSequence text = "ТЭН сгорел?";
+			CharSequence text = "введите мощность ТЭНа";
 			Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
 			power.setText("1");
-			flag = false;
 		}
 		i_power = (int) Integer.parseInt(power.getText().toString());
 
-		// вводим скорость отбора
+		// вводим скорость отбора или флегмово число
 		try {
-			d_sel = Float.parseFloat(sel.getText().toString());
+			d_f_s_value = Float.parseFloat(f_s_value.getText().toString());
 		} catch (NumberFormatException ex) {
-//			CharSequence text = "совсем не капает?";
-//			Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
-			sel.setText("0.01");
-			flag = false;
+			f_s_value.setText("0");
 		}
-		if (d_sel <= 0) {
-//			CharSequence text = "ФЧ устремилось к ∞";
-//			Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
-			sel.setText("0.01");
-			flag = false;
-		}
-		if (d_sel > d_v_lh) {
+		if ((d_f_s_value > d_v_lh) & (toggle.isChecked())) {
 //			CharSequence text = "больше, чем сконденсировалось, не отобрать";
 //			Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
-			d_sel = d_v_lh;
-			sel.setText(String.format("%.2f", d_v_lh));
-			flag = false;
+			d_f_s_value = d_v_lh;
+			f_s_value.setText(String.format("%.2f", d_v_lh));
 		}
-		d_sel = Float.parseFloat(sel.getText().toString());
-		
-		//вводим флегмовое число
-		try {
-			d_fn = Float.parseFloat(fn.getText().toString());
-		} catch (NumberFormatException ex) {
-//			CharSequence text = "ФЧ какое?";
-//			Toast.makeText(getApplicationContext(), text, Toast.LENGTH_LONG).show();
-			fn.setText("0.01");
-			flag = false;
-		}
-		d_fn = Float.parseFloat(fn.getText().toString());
+		d_f_s_value = Float.parseFloat(f_s_value.getText().toString());
 
-//		return flag;
-		return true;
+		return flag;
 	}
 
 	protected double temp_to_volp(int t) {
@@ -187,5 +157,15 @@ public class Steam extends Activity {
 		x = -0.13412 + 0.83749 * vp - 0.00116 * vp * vp + 0.0000276728 * vp
 				* vp * vp;
 		return x;
+	}
+	
+	public void onToggleClicked(View view) {
+	    boolean on = ((ToggleButton) view).isChecked();
+	    if (on) {
+			s_f_title.setText("ФЧ");
+	    } else {
+			s_f_title.setText("Отбор, л/ч");
+	    }
+	    recalc();
 	}
 }
