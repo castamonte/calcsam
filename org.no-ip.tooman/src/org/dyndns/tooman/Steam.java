@@ -162,9 +162,9 @@ public class Steam extends Activity {
 	public void onToggleClicked(View view) {
 	    boolean on = ((ToggleButton) view).isChecked();
 	    if (on) {
-			s_f_title.setText("ФЧ");
+			s_f_title.setText(getString(R.string.steam_fc));
 	    } else {
-			s_f_title.setText("Отбор, л/ч");
+			s_f_title.setText(getString(R.string.steam_otbor));
 	    }
 	    recalc();
 	}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="PageHeader" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/myColor</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="styleDefault" parent="android:Widget.TextView">
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_height">36dp</item>
+    </style>
+</resources>

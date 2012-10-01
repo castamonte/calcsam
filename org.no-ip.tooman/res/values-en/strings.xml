@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello world, hello!</string>
+    <string name="app_name">Moonshiner\'s calculator</string>
+
+    <string-array name="works">
+        <item>Фруктовая брага</item>
+        <item>Реальная мощность ТЭНа</item>
+        <item>Скорость отбора</item>
+        <item>Spirit vapor</item>
+        <item>Разведение спирта</item>
+        <item>Mixing</item>
+        <item>Прямоточный холодильник</item>
+        <item>Тепловые потери</item>
+    </string-array>
+
+    <color name="myColor">#088</color>
+
+    <string name="mixing">Mixing</string>
+    <string name="steam">Steam</string>
+    <string name="t_adjust">Температурный пересчёт</string>
+    <string name="density">Density</string>
+    <string name="title_activity_mixing">Смешивание растворов</string>
+    <string name="volume">V</string>
+    <string name="proc">% of spirits</string>
+    <string name="ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum nibh in ligula suscipit eu venenatis enim congue. Aliquam at pulvinar quam. Donec et felis ligula, sed cursus eros. Donec ac quam in neque ullamcorper ullamcorper ac sit amet elit. Phasellus sollicitudin tortor nec nunc euismod faucibus. Donec nec nulla odio. Mauris id pellentesque tellus. Aenean luctus velit massa, vel lacinia odio. Aliquam imperdiet sodales turpis a egestas. Mauris tristique ligula id nisl tempus dapibus.</string>
+    <string name="spirit_pro">% спирта в растворе</string>
+    <string name="boil">температура кипения</string>
+    <string name="t_adjust_long">Температурный пересчёт объёмной концентрации спирта, измеряемой по плотности</string>
+    <string name="t_ar0">Показания ареометра (об. %)</string>
+    <string name="t_t0">Температура измерения (0..50 °С)</string>
+    <string name="t_t1">Конечная температура (0..50 °С)</string>
+    <string name="t_ar1">Эквивалентная спиритуозность (об. %)</string>
+    <string name="t_ro0">Текущая плотность (кг/л)</string>
+    <string name="t_ro1">Конечная плотность (кг/л)</string>
+    <string name="nomU">Номинальное напряжение ТЭНа, В</string>
+    <string name="power">Расчёт реальной мощности нагревателя</string>
+    <string name="nomP">Номинальная мощность ТЭНа, Вт</string>
+    <string name="realU">Напряжение в сети, В</string>
+    <string name="realP">Реальная мощность ТЭНа, Вт</string>
+
+    <string-array name="liquid">
+        <item>Spirit volume</item>
+        <item>Water volume</item>
+        <item>Results volume</item>
+    </string-array>
+
+    <string name="dil_spirit0">Крепость исходного спирта (об.%)</string>
+    <string name="dil_rezt">Крепость результата (об.%)</string>
+    <string name="dil_v_spirit">Объём исходного спирта</string>
+    <string name="dil_v_aqua">Объём воды</string>
+    <string name="dil_v_rezt">Объём результата</string>
+    <string name="mix_sp1">Крепость первой жидкости</string>
+    <string name="mix_v1">Объём первой жидкости</string>
+    <string name="mix_sp2">Крепость второй жидкости</string>
+    <string name="mix_v2">Объём второй жидкости</string>
+    <string name="mix_str">Крепость смеси</string>
+    <string name="mix_vr">Объём смеси</string>
+    <string name="sel_lh">Скорость отбора, л/ч</string>
+    <string name="sel_ml">Отбор, мл</string>
+    <string name="sel_t">Время отбора, с</string>
+    <string name="s_btnStart">Start</string>
+    <string name="s_btnStop">Stop</string>
+    <string name="s_btnReset">Сброс</string>
+    <string name="sel_mls">&quot; ,   ml/s &quot;</string>
+    <string name="dist_begin_t">Температура в начале </string>
+    <string name="dist_end_t">Температура в конце</string>
+    <string name="dist_obp">об. %</string>
+    <string name="dist_braga">Объём браги</string>
+    <string name="dist_res_s">Cамогон, об.%</string>
+    <string name="dist_res_v">Объём</string>
+    <string name="menu_settings">Settings</string>
+    <string name="cons_power_cube">Мощность нагревания куба</string>
+    <string name="cons_teploss">Теплопотери системы, %%</string>
+    <string name="cons_waterflow">Расход воды, мл/мин</string>
+    <string name="cons_water_t0">Начальная температура воды</string>
+    <string name="cons_spirit_tout">Средняя температура самогона на выходе</string>
+
+    <string-array name="condens_mtl">
+        <item>copper</item>
+        <item>inox</item>
+    </string-array>
+    <string-array name="condens_d">
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>15</item>
+        <item>18</item>
+    </string-array>
+
+    <string name="cons_smgflow">Средняя производительность по самогону, л/час</string>
+    <string name="title_activity_condenser">Расчёт прямоточного холодильника</string>
+    <string name="title_activity_dilution">Разведение спирта</string>
+    <string name="title_activity_distillation">Перегонка браги</string>
+    <string name="title_activity_realheat">Расчёт мощности ТЭНа</string>
+    <string name="title_activity_selection">Скорость отбора</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_fruit">Фруктовая брага</string>
+    <string name="fr_sugar">  % of sugar</string>
+
+    <string-array name="fruit_name">
+        <item>cowberry</item>
+        <item>grape</item>
+        <item>cherry</item>
+        <item>pears</item>
+        <item>blackberry</item>
+        <item>shadberry</item>
+        <item>gooseberry</item>
+        <item>strawberry</item>
+        <item>raspberry</item>
+        <item>red currant</item>
+        <item>black currant</item>
+        <item>blueberry</item>
+        <item>apples</item>
+    </string-array>
+
+    <integer-array name="fruit_sugar">
+        <item>7</item>
+        <item>15</item>
+        <item>12</item>
+        <item>7</item>
+        <item>6</item>
+        <item>5</item>
+        <item>9</item>
+        <item>7</item>
+        <item>7</item>
+        <item>7</item>
+        <item>11</item>
+        <item>6</item>
+        <item>18</item>
+    </integer-array>
+
+    <string name="fr_real_spirit">calculated strenght, vol. %</string>
+    <string name="fr_wish_spirit">desired strenght, vol. %</string>
+    <string name="fr_juice_volume">volume of juice, l</string>
+    <string name="fr_add_sugar">add sugar, kg</string>
+    <string name="fr_add_water">add water, l</string>
+    <string name="fr_volume_itog">всего браги, l</string>
+    <string name="title_activity_wastage">Heat loss</string>
+    <string name="wast_vol">Water volume, l</string>
+    <string name="wast_t0">Initial themperature, °C</string>
+    <string name="wast_t1">Final themperature, °C</string>
+    <string name="wast_power">Мощность ТЭНа, Вт</string>
+    <string name="wast_time">Heating time, с</string>
+    <string name="wast_waste">Heating loss, %%</string>
+
+    <string-array name="menu_items">
+        <item>gratitudes</item>
+        <item>about ethyl alcohol</item>
+    </string-array>
+
+    <string name="steam_tk">Boiling point, °C</string>
+    <string name="title_activity_steam">Alcohol vapor</string>
+    <string name="steam_vol_percent">Объёмная доля спирта, %%</string>
+    <string name="steam_mass_percent">Весовая доля спирта, %%</string>
+    <string name="steam_massa">Vapor mass, kg/h</string>
+    <string name="steam_massa_gr">,  g/s</string>
+    <string name="steam_volume">Volume of condensate, l/h</string>
+    <string name="steam_volume_ml">, ml/s</string>
+    <string name="steam_otbor">Sel., l/h</string>
+    <string name="steam_fc">Reflux ratio</string>
+    <string name="steam_power">Power of PETN, W</string>
+    <string name="steam_sel">Selection, l/h</string>
+
+</resources>
