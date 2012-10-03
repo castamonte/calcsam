@@ -34,10 +34,11 @@ public class hello extends Activity {
 				if (position == 1) {myIntent = new Intent(view.getContext(), Realheat.class);}
 				if (position == 2) {myIntent = new Intent(view.getContext(), Selection.class);}
 				if (position == 3) {myIntent = new Intent(view.getContext(), Steam.class);}
-				if (position == 4) {myIntent = new Intent(view.getContext(), Dilution.class);}
-				if (position == 5) {myIntent = new Intent(view.getContext(), Mixing.class);}
-				if (position == 6) {myIntent = new Intent(view.getContext(), Condenser.class);}
-				if (position == 7) {myIntent = new Intent(view.getContext(), Wastage.class);}
+				if (position == 4) {myIntent = new Intent(view.getContext(), Density.class);}
+				if (position == 5) {myIntent = new Intent(view.getContext(), Dilution.class);}
+				if (position == 6) {myIntent = new Intent(view.getContext(), Mixing.class);}
+				if (position == 7) {myIntent = new Intent(view.getContext(), Condenser.class);}
+				if (position == 8) {myIntent = new Intent(view.getContext(), Wastage.class);}
 
 				startActivity(myIntent);
 

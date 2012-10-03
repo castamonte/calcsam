@@ -5,14 +5,15 @@
     <string name="app_name">Калькулятор самогонщика</string>
 
     <string-array name="works">
-        <item>Фруктовая брага</item><item>Реальная мощность ТЭНа</item><item>Скорость отбора</item><item>Спиртовой пар</item><item>Разведение спирта</item>
+        <item>Фруктовая брага</item>
+        <item>Реальная мощность ТЭНа</item>
+        <item>Скорость отбора</item>
+        <item>Спиртовой пар</item>
+        <item>Плотность</item>
+        <item>Разведение спирта</item>
         <item>Смешивание</item>
-        
-        
         <item>Прямоточный холодильник</item>
-        
-        <item >Тепловые потери</item>
-        
+        <item>Тепловые потери</item>
     </string-array>
 
     <color name="myColor">#088</color>
@@ -145,21 +146,30 @@
     <string name="wast_power">Мощность ТЭНа, Вт</string>
     <string name="wast_time">Время нагревания, с</string>
     <string name="wast_waste">Тепловые потери, %%</string>
+
     <string-array name="menu_items">
-        <item >благодарности</item>
-        <item >об этиловом спирте</item>
+        <item>благодарности</item>
+        <item>об этиловом спирте</item>
     </string-array>
-        <string name="steam_tk">Температура кипения, °C</string>
-        <string name="title_activity_steam">Спиртовой пар</string>
-        <string name="steam_vol_percent">Объёмная доля спирта, %%</string>
-        <string name="steam_mass_percent">Весовая доля спирта, %%</string>
-        <string name="steam_massa">Масса пара, кг/ч</string>
-        <string name="steam_massa_gr">,  г/с</string>
-        <string name="steam_volume">Объём конденсата, л/ч</string>
-        <string name="steam_volume_ml">, мл/с</string>
-        <string name="steam_otbor">Отбор, л/ч</string>
-        <string name="steam_fc">ФЧ</string>
-        <string name="steam_power">Мощность ТЭНа, Вт</string>
-        <string name="steam_sel">Отбор, л/ч</string>
+
+    <string name="steam_tk">Температура кипения, °C</string>
+    <string name="title_activity_steam">Спиртовой пар</string>
+    <string name="steam_vol_percent">Объёмная доля спирта, %%</string>
+    <string name="steam_mass_percent">Весовая доля спирта, %%</string>
+    <string name="steam_massa">Масса пара, кг/ч</string>
+    <string name="steam_massa_gr">,  г/с</string>
+    <string name="steam_volume">Объём конденсата, л/ч</string>
+    <string name="steam_volume_ml">, мл/с</string>
+    <string name="steam_otbor">Отбор, л/ч</string>
+    <string name="steam_fc">ФЧ</string>
+    <string name="steam_power">Мощность ТЭНа, Вт</string>
+    <string name="steam_sel">Отбор, л/ч</string>
+    <string name="title_activity_density">Плотность</string>
+    <string name="dens_density">Плотность, г/л</string>
+    <string name="dens_areo">Показания ареометра, об.%</string>
+    <string name="dens_vol">Объём, мл</string>
+    <string name="dens_mass">Масса, г</string>
+    <string name="dens_temp">Температура, °C</string>
+    <string name="dens_spirit">Крепость при 20°C, об.%</string>
 
 </resources>
