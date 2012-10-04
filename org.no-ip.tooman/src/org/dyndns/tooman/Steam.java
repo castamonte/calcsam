@@ -15,10 +15,10 @@ import android.widget.ToggleButton;
 
 public class Steam extends Activity {
 	private EditText temp, power, f_s_value;
-	private TextView vol_sh, mass_sh, m_kgh, m_gs, v_lh, v_mls, s_f_title, s_f_value;
+	private TextView vol_sh, mass_sh, vol_sh_st, mass_sh_st, m_kgh, m_gs, v_lh, v_mls, s_f_title, s_f_value;
 	private ToggleButton toggle; 
 	private int i_temp, i_power;
-	private double d_f_s_value, d_s_f_value, d_vol_sh, d_mass_sh, d_m_kgh, d_m_gs, d_v_lh, d_v_mls;
+	private double d_f_s_value, d_s_f_value, d_vol_sh, d_mass_sh, d_vol_sh_st, d_mass_sh_st, d_m_kgh, d_m_gs, d_v_lh, d_v_mls;
 
 	EditText.OnEditorActionListener etListener = new EditText.OnEditorActionListener() {
 		// @Override
@@ -46,13 +46,15 @@ public class Steam extends Activity {
 		f_s_value.setOnEditorActionListener(etListener);
 		toggle = (ToggleButton) findViewById(R.id.toggleButton1);
 		vol_sh = (TextView) findViewById(R.id.textView3);
-		mass_sh = (TextView) findViewById(R.id.textView5);
-		m_kgh = (TextView) findViewById(R.id.textView8);
-		m_gs = (TextView) findViewById(R.id.textView10);
-		v_lh = (TextView) findViewById(R.id.textView12);
-		v_mls = (TextView) findViewById(R.id.textView14);
-		s_f_title = (TextView) findViewById(R.id.textView15);
-		s_f_value = (TextView) findViewById(R.id.textView16);
+		mass_sh = (TextView) findViewById(R.id.textView7);
+		vol_sh_st = (TextView) findViewById(R.id.textView5);
+		mass_sh_st = (TextView) findViewById(R.id.textView9);
+		m_kgh = (TextView) findViewById(R.id.textView12);
+		m_gs = (TextView) findViewById(R.id.textView14);
+		v_lh = (TextView) findViewById(R.id.textView16);
+		v_mls = (TextView) findViewById(R.id.textView18);
+		s_f_title = (TextView) findViewById(R.id.textView19);
+		s_f_value = (TextView) findViewById(R.id.textView20);
 		d_m_kgh = 3.77;
 	}
 
@@ -60,6 +62,8 @@ public class Steam extends Activity {
 		if (test()) {
 			d_vol_sh = temp_to_volp(i_temp);
 			d_mass_sh = volp_to_masp(d_vol_sh);
+			d_vol_sh_st = temp_to_volps(i_temp);
+			d_mass_sh_st = temp_to_masps(i_temp);
 			d_m_kgh = 3.6 * i_power
 					/ (8.40 * d_mass_sh + 22.56 * (100 - d_mass_sh));
 			d_m_gs = d_m_kgh / 3.6;
@@ -84,6 +88,8 @@ public class Steam extends Activity {
 
 		vol_sh.setText(String.format("%.1f", d_vol_sh));
 		mass_sh.setText(String.format("%.1f", d_mass_sh));
+		vol_sh_st.setText(String.valueOf(Math.round(d_vol_sh_st)));
+		mass_sh_st.setText(String.valueOf(Math.round(d_mass_sh_st)));
 		m_kgh.setText(String.format("%.2f", d_m_kgh));
 		m_gs.setText(String.format("%.2f", d_m_gs));
 		v_lh.setText(String.format("%.2f", d_v_lh));
@@ -138,7 +144,6 @@ public class Steam extends Activity {
 			d_f_s_value = d_v_lh;
 			f_s_value.setText(String.format("%.2f", d_v_lh));
 		}
-		d_f_s_value = Float.parseFloat(f_s_value.getText().toString());
 
 		return flag;
 	}
@@ -156,6 +161,26 @@ public class Steam extends Activity {
 		// зависимость массовой доли спирта от объёмной
 		x = -0.13412 + 0.83749 * vp - 0.00116 * vp * vp + 0.0000276728 * vp
 				* vp * vp;
+		return x;
+	}
+
+	protected double temp_to_volps(int t) {
+		// объёмный % спирта в паре в зависимости от температуры кипения
+		double x=
+				8.7143698570378365e+003
+				-3.0058697309599029e+002*t
+				+3.5093505563842378e+000*t*t
+				-1.3747910308583867e-002*t*t*t;
+		return x;
+	}
+
+	protected double temp_to_masps(int t) {
+		// массовый % спирта в паре в зависимости от температуры кипения
+		double x=
+				7.5062890739470577e+003
+				-2.5587189447949848e+002*t
+				+2.9605486828866305e+000*t*t
+				-1.1524455277038310e-002*t*t*t;
 		return x;
 	}
 	

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.dyndns.tooman"
     android:versionCode="1"
-    android:versionName="121003" >
+    android:versionName="121004" >
 
     <uses-sdk android:minSdkVersion="4" />
 
