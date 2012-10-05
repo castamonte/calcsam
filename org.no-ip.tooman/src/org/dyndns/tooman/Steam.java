@@ -86,8 +86,13 @@ public class Steam extends Activity {
 			}
 		}
 
-		vol_sh.setText(String.format("%.1f", d_vol_sh));
-		mass_sh.setText(String.format("%.1f", d_mass_sh));
+		if (d_vol_sh<10) {
+			vol_sh.setText(String.format("%.1f", d_vol_sh));
+			mass_sh.setText(String.format("%.1f", d_mass_sh));
+		} else {
+			vol_sh.setText(String.valueOf(Math.round(d_vol_sh)));
+			mass_sh.setText(String.valueOf(Math.round(d_mass_sh)));
+		}
 		vol_sh_st.setText(String.valueOf(Math.round(d_vol_sh_st)));
 		mass_sh_st.setText(String.valueOf(Math.round(d_mass_sh_st)));
 		m_kgh.setText(String.format("%.2f", d_m_kgh));

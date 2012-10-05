@@ -145,7 +145,7 @@
             android:layout_gravity="right"
             android:gravity="right"
             android:maxLength="3"
-            android:text="40"
+            android:text="38"
             android:textAppearance="@style/PageHeader"
             android:textColor="@color/myColor" />
   
